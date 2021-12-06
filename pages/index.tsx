@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
+// import HomeBanner from '../assets/images/HomeBanner.png';
+import HomeBanner from '../components/Home/HomeBanner';
 
 const Home: NextPage = () => {
   return (
@@ -11,8 +14,17 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='flex items-center justify-center h-96 '>
-        <h1 className='text-3xl'>Pamardi Yuwana Bhakti</h1>
+      <main>
+        <section>
+          <HomeBanner />
+          {/* <Image src={HomeBanner} /> */}
+        </section>
+        <section>Alumni Said</section>
+        <section>School Summary</section>
+        <section>Life At Our School</section>
+        <section>Academic Calendar</section>
+        <section>Latest News & Events</section>
+        <section>Covid-19 Plan</section>
       </main>
     </div>
   );

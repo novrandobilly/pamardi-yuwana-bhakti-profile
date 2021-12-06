@@ -6,7 +6,7 @@ const Layout: React.FC = ({ children }) => {
   return (
     <div>
       <Header />
-      {children}
+      <div className='py-20'>{children}</div>
       <Footer />
     </div>
   );
