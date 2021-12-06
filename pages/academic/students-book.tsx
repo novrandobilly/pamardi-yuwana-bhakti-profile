@@ -12,7 +12,7 @@ const StudentsBook: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='flex items-center justify-center h-96 '>
-        <h1 className='text-3xl'>Student's Book</h1>
+        <h1 className='text-3xl'>Student&apos;s Book</h1>
       </main>
     </Fragment>
   );
