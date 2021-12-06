@@ -1,21 +1,21 @@
 import type { NextPage } from 'next';
+import { Fragment } from 'react';
 import Head from 'next/head';
 
-const Home: NextPage = () => {
+const Logo: NextPage = () => {
   return (
-    <div>
+    <Fragment>
       <Head>
-        <title>Homepage</title>
-        <meta name='description' content='Pamardi Yuwana Bhakti Homepage' />
+        <title>Logo</title>
+        <meta name='description' content='Logo' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <main className='flex items-center justify-center h-96 '>
-        <h1 className='text-3xl'>Pamardi Yuwana Bhakti</h1>
+        <h1 className='text-3xl'>Logo</h1>
       </main>
-    </div>
+    </Fragment>
   );
 };
 
-export default Home;
+export default Logo;
