@@ -9,9 +9,9 @@ import Image from 'next/image';
 const HeaderBanner = () => {
   return (
     <Carousel autoPlay infiniteLoop showStatus={false} emulateTouch showThumbs={false} stopOnHover={false}>
-      <Image src={Ceremony} />
-      <Image src={Basket} />
-      <Image src={Chess} />
+      <Image alt='Banner 1' src={Ceremony} />
+      <Image alt='Banner 2' src={Basket} />
+      <Image alt='Banner 3' src={Chess} />
     </Carousel>
   );
 };
