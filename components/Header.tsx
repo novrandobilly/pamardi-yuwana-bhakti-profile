@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
-    <div className='fixed z-20 flex items-center justify-between w-full px-10 pt-2 pb-3 bg-white bg-opacity-75'>
+    <div className='fixed z-20 flex items-center justify-between w-full px-10 py-2 bg-white bg-opacity-75'>
       {/* Pamardi Yuwana Bhakti's Logo */}
       <Link passHref href='/'>
-        <div>
+        <div className='flex items-center'>
           <Image src={Logo} objectFit='contain' width={60} height={60} className='cursor-pointer' alt='School Logo' />
         </div>
       </Link>

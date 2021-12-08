@@ -17,9 +17,8 @@ const Home: NextPage = () => {
       <main>
         <section>
           <HomeBanner />
-          {/* <Image src={HomeBanner} /> */}
         </section>
-        <section>Alumni Said</section>
+        <section className='z-20'>Alumni Said</section>
         <section>School Summary</section>
         <section>Life At Our School</section>
         <section>Academic Calendar</section>
