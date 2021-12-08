@@ -17,7 +17,7 @@ const HomeBanner = () => {
       interval={5000}>
       <div id={styles.Banner1} className={styles.HomeBanner}>
         <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-white'>
-          Talent wins games, but teamwork win championships.
+          Talent wins games, but teamwork wins championships.
         </q>
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
       </div>
