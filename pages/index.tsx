@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <HomeBanner />
         </section>
         <section className='flex flex-col items-center my-12'>
-          <h1 className='font-serif text-4xl font-bold text-yellow-600'>"</h1>
+          <h1 className='font-serif text-4xl font-bold text-yellow-600'>&#34;</h1>
           <p className='w-3/5 text-2xl text-center text-gray-800'>
             Selain pembelajaran akademik, disini saya memiliki teman-teman yang baik, gurunya asik-asik, dan kegiatan
             sekolahnya seru-seru.
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <div className='relative w-full max-w-2xl'>
             <Image alt='School Summary' src={SchoolSummary} />
           </div>
-          <div className='w-full max-w-xl p-5 space-y-5 text-lg text-gray-800'>
+          <div className='w-full max-w-xl space-y-5 text-lg text-gray-800 px-14'>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id accusamus atque ipsa soluta repudiandae
               sapiente eum doloremque laboriosam.
