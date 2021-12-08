@@ -13,6 +13,8 @@ module.exports = {
   variants: {
     extend: {
       display: ['group-hover'],
+      borderStyle: ['hover', 'responsive'],
+      borderWidth: ['hover', 'responsive'],
     },
   },
   plugins: [],

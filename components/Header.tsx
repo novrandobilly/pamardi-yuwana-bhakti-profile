@@ -16,12 +16,12 @@ const Header: React.FC = () => {
       {/* Navgiation Bar */}
 
       <ul className='flex text-base leading-4'>
-        <li className='pr-5 hover:text-blue-600 '>
+        <li className='pr-5 hover:text-blue-800 '>
           <Link passHref href='/'>
             Home
           </Link>
         </li>
-        <li className='relative px-5 border-blue-600 cursor-pointer border-l-1 group hover:text-blue-600 '>
+        <li className='relative px-5 border-blue-800 cursor-pointer border-l-1 group hover:text-blue-800 '>
           Profile
           <ul className='absolute hidden py-2 text-sm text-left text-black bg-transparent w-max left-5 group-hover:block top-4'>
             <Link passHref href='/profile/vission-mission'>
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           </ul>
         </li>
 
-        <li className='relative px-5 border-blue-600 cursor-pointer border-l-1 group hover:text-blue-600 '>
+        <li className='relative px-5 border-blue-800 cursor-pointer border-l-1 group hover:text-blue-800 '>
           Academic
           <ul className='absolute hidden py-2 text-sm text-left text-black bg-transparent w-max left-5 group-hover:block top-4'>
             <Link passHref href='/academic/curriculum'>
@@ -65,27 +65,27 @@ const Header: React.FC = () => {
             </Link>
           </ul>
         </li>
-        <li className='px-5 border-blue-600 border-l-1 hover:text-blue-600'>
+        <li className='px-5 border-blue-800 border-l-1 hover:text-blue-800'>
           <Link passHref href='/extracurricular'>
             Extracurricular
           </Link>
         </li>
-        <li className='px-5 border-blue-600 border-l-1 hover:text-blue-600'>
+        <li className='px-5 border-blue-800 border-l-1 hover:text-blue-800'>
           <Link passHref href='/student-life'>
             Student Life
           </Link>
         </li>
-        <li className='px-5 border-blue-600 border-l-1 hover:text-blue-600'>
+        <li className='px-5 border-blue-800 border-l-1 hover:text-blue-800'>
           <Link passHref href='/facilities'>
             Facilities
           </Link>
         </li>
-        <li className='px-5 border-blue-600 border-l-1 hover:text-blue-600'>
+        <li className='px-5 border-blue-800 border-l-1 hover:text-blue-800'>
           <Link passHref href='/gallery'>
             Gallery
           </Link>
         </li>
-        <li className='pl-5 border-blue-600 border-l-1 hover:text-blue-600'>
+        <li className='pl-5 border-blue-800 border-l-1 hover:text-blue-800'>
           <Link passHref href='/admission'>
             Admission
           </Link>
