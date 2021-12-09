@@ -12,31 +12,32 @@ const HomeBanner = () => {
       showThumbs={false}
       showIndicators={false}
       emulateTouch
+      swipeable={false}
       stopOnHover={false}
       transitionTime={1000}
       interval={5000}>
       <div id={styles.Banner1} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-white'>
-          Talent wins games, but teamwork wins championships.
+        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
+          Talent wins games, but teamwork and intelligence wins championships.
         </q>
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
       </div>
       <div id={styles.Banner2} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-white'>
+        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
           I’ve learned that something constructive comes from every defeat.
         </q>
 
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
       </div>
       <div id={styles.Banner3} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-white'>
+        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
           Nothing is at last sacred but the integrity of your own mind.
         </q>
 
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
       </div>
       <div id={styles.Banner4} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-white'>
+        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
           Tell me and I forget.
           <p>Teach me and I remember.</p>
           Involve me and I learn.
@@ -45,7 +46,7 @@ const HomeBanner = () => {
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
       </div>
       <div id={styles.Banner5} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-white'>
+        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
           The future belongs to those who believe in the beauty of their dreams.
         </q>
 

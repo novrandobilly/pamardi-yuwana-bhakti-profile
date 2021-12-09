@@ -10,9 +10,9 @@ const LifeAtOurSchool = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, adipisci ratione? Animi quisquam eveniet
         unde incidunt, nostrum quod doloribus dignissimos adipisci debitis.
       </p>
-      <p className='self-start mb-3 text-xl italic font-bold text-left text-gray-800 w-max hover:text-yellow-300 hover:underline'>
+      <p className='self-start px-2 mb-3 text-xl italic text-left text-blue-700 transition-all hover:text-yellow-400 '>
         <Link href='/' passHref>
-          View all activites
+          View all activities
         </Link>
       </p>
       <div className='flex items-center justify-between w-full space-x-4'>

@@ -8,7 +8,8 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
 }
 #Banner1 {
   background-image: url('../../assets/images/HomeBanner/Teamwork.jpg');
