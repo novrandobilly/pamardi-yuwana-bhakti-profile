@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Logo from '../assets/images/Logo.png';
 import Link from 'next/link';
+import ID from '../assets/icons/ID.svg';
+import UK from '../assets/icons/UK.svg';
 
 const Header: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const Header: React.FC = () => {
       <Link passHref href='/'>
         <div className='flex items-center w-1/3 '>
           <Image src={Logo} objectFit='contain' width={60} height={60} className='cursor-pointer' alt='School Logo' />
-          <h1 className='ml-2 font-serif text-2xl font-bold'>PAMARDI YUWANA BHAKTI</h1>
+          <h1 className='ml-2 font-serif text-2xl font-bold cursor-pointer'>PAMARDI YUWANA BHAKTI</h1>
         </div>
       </Link>
 
@@ -86,10 +88,18 @@ const Header: React.FC = () => {
             Gallery
           </Link>
         </li>
-        <li className='pl-5 border-blue-800 border-l-1 hover:text-blue-800'>
+        <li className='px-5 border-blue-800 border-l-1 hover:text-blue-800'>
           <Link passHref href='/admission'>
             Admission
           </Link>
+        </li>
+        <li className='flex items-center justify-between hover:text-blue-800'>
+          <span className='cursor-pointer'>
+            <Image width={20} height={20} layout='fixed' src={ID} alt='Bahasa Indonesia' />
+          </span>
+          <span className='cursor-pointer'>
+            <Image width={20} height={20} layout='fixed' src={UK} alt='English' />
+          </span>
         </li>
       </ul>
     </div>
