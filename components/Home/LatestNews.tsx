@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const LatestNews = () => {
   return (
@@ -8,8 +9,10 @@ const LatestNews = () => {
         <Link passHref href='/blog'>
           <div className='w-full transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
             <div className='w-full'>
-              <img
-                className='object-cover w-full h-96 rounded-t-md'
+              <Image
+                width={630}
+                height={400}
+                objectFit='cover'
                 alt='News'
                 src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/70689694_378368429779300_8408032878654390272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=0debeb&_nc_ohc=49qoi9zj8jQAX_QOV2z&_nc_ht=scontent.fcgk30-1.fna&oh=acd5a4c81abbaed6f5a5dd907b90eb68&oe=61D5C9C7'
               />
@@ -27,7 +30,10 @@ const LatestNews = () => {
           <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
-                <img
+                <Image
+                  width={400}
+                  height={300}
+                  objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
                   src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/84037284_494516958164446_5791807121423073280_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=U8wPrf1akBIAX-nP2g6&tn=O8IzagTKjFjQ-8lk&_nc_ht=scontent.fcgk30-1.fna&oh=acf2ca2ac46381d55ae6609454d63685&oe=61D64057'
@@ -43,7 +49,10 @@ const LatestNews = () => {
           <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
-                <img
+                <Image
+                  width={400}
+                  height={300}
+                  objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
                   src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/43178859_1093883120793029_2399394453551841280_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=2jqP5G6uHgsAX9T8CPa&_nc_ht=scontent.fcgk30-1.fna&oh=a6d8f1a2c5642399b91850ac5859dab3&oe=61D75049'
@@ -60,8 +69,10 @@ const LatestNews = () => {
         <Link passHref href='/blog'>
           <div className='w-full transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
             <div className='w-full'>
-              <img
-                className='object-cover w-full h-96 rounded-t-md'
+              <Image
+                width={630}
+                height={400}
+                objectFit='cover'
                 alt='News'
                 src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/82388681_473819623567513_7402665744300769280_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=0debeb&_nc_ohc=rw4ux33iJY8AX_To9fN&tn=O8IzagTKjFjQ-8lk&_nc_ht=scontent.fcgk30-1.fna&oh=55338faa4f1b9a076017db4a44e27965&oe=61D6C86E'
               />
@@ -77,7 +88,10 @@ const LatestNews = () => {
           <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
-                <img
+                <Image
+                  width={400}
+                  height={300}
+                  objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
                   src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/79995470_455953555354120_7503276654584659968_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=iu-CxuNukGwAX-utIpH&tn=O8IzagTKjFjQ-8lk&_nc_ht=scontent.fcgk30-1.fna&oh=8c0e35f0e1a610899e123efdc352be95&oe=61D7716D'
@@ -93,7 +107,10 @@ const LatestNews = () => {
           <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
-                <img
+                <Image
+                  width={400}
+                  height={300}
+                  objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
                   src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/76938840_436243783991764_3278345942876553216_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=wSlNYx_hQ5gAX_c9riK&_nc_ht=scontent.fcgk30-1.fna&oh=f16b22230ca955b3d52f59d9643e25f1&oe=61D7B733'
