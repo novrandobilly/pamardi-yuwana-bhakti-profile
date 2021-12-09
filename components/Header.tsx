@@ -28,15 +28,15 @@ const Header: React.FC = () => {
           Profile
           <ul className='absolute hidden py-2 text-sm text-left text-black bg-transparent w-max left-5 group-hover:block top-4'>
             <Link passHref href='/profile/vission-mission'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>
                 Vission & Mission
               </li>
             </Link>
             <Link passHref href='/profile/logo'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>Logo</li>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>Logo</li>
             </Link>
             <Link passHref href='/profile/march'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>Mars</li>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>Mars</li>
             </Link>
           </ul>
         </li>
@@ -45,26 +45,30 @@ const Header: React.FC = () => {
           Academic
           <ul className='absolute hidden py-2 text-sm text-left text-black bg-transparent w-max left-5 group-hover:block top-4'>
             <Link passHref href='/academic/curriculum'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>Curriculum</li>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>Curriculum</li>
             </Link>
             <Link passHref href='/academic/code-of-conduct'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>Code of Conduct</li>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>
+                Code of Conduct
+              </li>
             </Link>
             <Link passHref href='/academic/students-book'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>
                 Student&apos;s Book
               </li>
             </Link>
             <Link passHref href='/academic/schedule'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>Schedule</li>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>Schedule</li>
             </Link>
             <Link passHref href='/academic/academic-calendar'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>
                 Academic Calendar
               </li>
             </Link>
             <Link passHref href='/academic/faculty-staff'>
-              <li className='py-1 pl-1 pr-2 bg-white border-blue-300 hover:bg-blue-100 border-b-1 '>Faculty & Staff</li>
+              <li className='py-2 pl-3 pr-2 bg-white border-b-2 border-blue-100 w-52 hover:bg-blue-100 '>
+                Faculty & Staff
+              </li>
             </Link>
           </ul>
         </li>
