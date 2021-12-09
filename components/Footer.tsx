@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
               </a>
             </li>
             <li className='cursor-pointer'>
-              <a href='/' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.facebook.com/osis.pyb' target='_blank' rel='noopener noreferrer'>
                 <Image width={50} height={50} layout='fixed' src={Whatsapp} alt='Whatsapp' />
               </a>
             </li>
