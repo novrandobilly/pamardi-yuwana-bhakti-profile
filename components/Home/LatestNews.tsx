@@ -5,7 +5,7 @@ const LatestNews = () => {
   return (
     <Fragment>
       <div className='flex flex-col w-1/2 space-y-5'>
-        <Link passHref href='/'>
+        <Link passHref href='/blog'>
           <div className='w-full transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
             <div className='w-full'>
               <img
@@ -24,7 +24,7 @@ const LatestNews = () => {
           </div>
         </Link>
         <div className='flex space-x-5'>
-          <Link passHref href='/'>
+          <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
                 <img
@@ -40,7 +40,7 @@ const LatestNews = () => {
               <p className='px-5 pt-2 pb-8 text-gray-400'>November 15, 2021</p>
             </div>
           </Link>
-          <Link passHref href='/'>
+          <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
                 <img
@@ -57,7 +57,7 @@ const LatestNews = () => {
         </div>
       </div>
       <div className='flex flex-col-reverse w-1/2 '>
-        <Link passHref href='/'>
+        <Link passHref href='/blog'>
           <div className='w-full transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
             <div className='w-full'>
               <img
@@ -74,7 +74,7 @@ const LatestNews = () => {
           </div>
         </Link>
         <div className='flex mb-5 space-x-5'>
-          <Link passHref href='/'>
+          <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
                 <img
@@ -90,7 +90,7 @@ const LatestNews = () => {
               <p className='px-5 pt-2 pb-8 text-gray-400'>November 15, 2021</p>
             </div>
           </Link>
-          <Link passHref href='/'>
+          <Link passHref href='/blog'>
             <div className='w-1/2 transition-all rounded-md shadow-md cursor-pointer hover:shadow-2xl'>
               <div className='w-full'>
                 <img

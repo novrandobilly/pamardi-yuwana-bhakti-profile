@@ -44,6 +44,16 @@ const Home: NextPage = () => {
         <section className='flex items-center justify-between mx-auto space-x-5 mb-14 max-w-7xl'>
           <LatestNews />
         </section>
+        <section className='flex flex-col items-center w-full py-4 mx-auto space-y-5 border-t-4 border-b-4 border-yellow-300 mb-14 max-w-7xl'>
+          <h1 className='pb-3 font-serif text-4xl text-center '>
+            Pamardi Yuwana Bhakti is a second home where students can achieve everything they want to be.
+          </h1>
+          <Link passHref href='/admission'>
+            <button className='px-5 py-2 text-2xl font-bold text-blue-900 transition-all transform bg-yellow-400 border-2 rounded hover:scale-110'>
+              Enroll Now
+            </button>
+          </Link>
+        </section>
 
         <section className='w-full py-4 bg-yellow-100'>
           <div className='flex items-start justify-between w-full mx-auto max-w-7xl'>

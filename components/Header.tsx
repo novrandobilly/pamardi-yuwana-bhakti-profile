@@ -84,8 +84,8 @@ const Header: React.FC = () => {
           </Link>
         </li>
         <li className='px-5 border-blue-800 border-l-1 hover:text-blue-800'>
-          <Link passHref href='/gallery'>
-            Gallery
+          <Link passHref href='/blog'>
+            Blog
           </Link>
         </li>
         <li className='px-5 border-blue-800 border-l-1 hover:text-blue-800'>

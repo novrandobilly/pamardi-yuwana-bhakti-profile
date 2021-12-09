@@ -73,8 +73,8 @@ const AcademicCalendar = () => {
       <div className='w-full max-w-2xl '>
         <div className='flex items-center justify-between mb-10'>
           <h1 className='text-2xl font-bold'>Academic Calendar 2021-2022</h1>
-          <Link passHref href='/'>
-            <p className='box-border p-1 italic text-blue-700 transition-all bg-white border-2 border-blue-700 rounded cursor-pointer hover:bg-yellow-300 hover:border-yellow-300'>
+          <Link passHref href='/academic/academic-calendar'>
+            <p className='box-border px-3 py-1 italic font-bold text-blue-900 transition-all bg-yellow-300 rounded cursor-pointer '>
               View Full Calendar
             </p>
           </Link>
