@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const LatestNews = () => {
+const LatestNews: React.FC = () => {
   return (
     <Fragment>
       <div className='flex flex-col w-1/2 space-y-5'>
@@ -14,7 +14,7 @@ const LatestNews = () => {
                 height={400}
                 objectFit='cover'
                 alt='News'
-                src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/70689694_378368429779300_8408032878654390272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=0debeb&_nc_ohc=49qoi9zj8jQAX_QOV2z&_nc_ht=scontent.fcgk30-1.fna&oh=acd5a4c81abbaed6f5a5dd907b90eb68&oe=61D5C9C7'
+                src='https://scontent.fcgk29-1.fna.fbcdn.net/v/t1.6435-9/70428789_378368076446002_6761419851333369856_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=0debeb&_nc_eui2=AeEyVX-KJYoza069S2cMwo8O_trVQfBwBUv-2tVB8HAFS-pL9bQCDdd7WRxtfqjm09Y&_nc_ohc=W2QMl7kB5sYAX8bQxrd&_nc_ht=scontent.fcgk29-1.fna&oh=00_AT80kaGuTVRx55NhGp7G8Pqknc7vmVXcPabTlw7TQUys5w&oe=6229D8A2'
               />
             </div>
             <h6 className='px-5 pt-6 pb-2 text-sm italic text-yellow-700'>
@@ -36,7 +36,7 @@ const LatestNews = () => {
                   objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
-                  src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/84037284_494516958164446_5791807121423073280_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=U8wPrf1akBIAX-nP2g6&tn=O8IzagTKjFjQ-8lk&_nc_ht=scontent.fcgk30-1.fna&oh=acf2ca2ac46381d55ae6609454d63685&oe=61D64057'
+                  src='https://scontent.fcgk29-1.fna.fbcdn.net/v/t1.6435-9/83948291_494513364831472_6615202976845791232_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_eui2=AeEYBmqq1q75WMVbNpqayy10WUzlGLBZdntZTOUYsFl2e0QmXOXtbdKrss2Dj-H61eQ&_nc_ohc=1mGSXfgx7lcAX8hhbmc&tn=dg4L8K7fLkj_W39C&_nc_ht=scontent.fcgk29-1.fna&oh=00_AT-QlT7YHIFm-GvfXp1n7ls2E5J_Z9vUD5muZVEOCyMDPg&oe=622B31D7'
                 />
               </div>
               <h6 className='px-5 pt-6 pb-2 text-sm italic text-yellow-700'>OSIS, LEADERSHIP, ORGANIZATION</h6>
@@ -55,7 +55,7 @@ const LatestNews = () => {
                   objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
-                  src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/43178859_1093883120793029_2399394453551841280_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=2jqP5G6uHgsAX9T8CPa&_nc_ht=scontent.fcgk30-1.fna&oh=a6d8f1a2c5642399b91850ac5859dab3&oe=61D75049'
+                  src='https://scontent.fcgk29-1.fna.fbcdn.net/v/t1.6435-9/43311629_1093882590793082_4156861454366015488_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_eui2=AeHCC7lE7mRpMXl_fMxWU5T4EiowU2UywhUSKjBTZTLCFdRCgoOZFxi2rbkwLXLtB_o&_nc_ohc=H1IxAHrEwWQAX-3R-UO&tn=dg4L8K7fLkj_W39C&_nc_ht=scontent.fcgk29-1.fna&oh=00_AT8UhnaGY59GlHnFTV5o1aEifZmBXh-EqcCyVDVMYKja-A&oe=622ADD06'
                 />
               </div>
               <h6 className='px-5 pt-6 pb-2 text-sm italic text-yellow-700'>ARTS, MUSIC, EXTRACURRICULAR</h6>
@@ -74,7 +74,7 @@ const LatestNews = () => {
                 height={400}
                 objectFit='cover'
                 alt='News'
-                src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/82388681_473819623567513_7402665744300769280_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=0debeb&_nc_ohc=rw4ux33iJY8AX_To9fN&tn=O8IzagTKjFjQ-8lk&_nc_ht=scontent.fcgk30-1.fna&oh=55338faa4f1b9a076017db4a44e27965&oe=61D6C86E'
+                src='https://scontent.fcgk29-1.fna.fbcdn.net/v/t1.6435-9/81690559_473822646900544_6086522816587366400_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=0debeb&_nc_eui2=AeHd69P9apPP62tiAAfiG-if1EdAVgWpHinUR0BWBakeKVx9k8zWI3etm46bd0-bqhw&_nc_ohc=yuQDj269rPsAX-7JckG&_nc_ht=scontent.fcgk29-1.fna&oh=00_AT-1Mm8FFMfcoKWfwebfVBEaSCFbNYC9_Fa7gXbFF6y63w&oe=622A94DC'
               />
             </div>
             <h6 className='px-5 pt-6 pb-2 text-sm italic text-yellow-700'>BAKTI SOSIAL, HUBUNGAN MASYARAKAT</h6>
@@ -94,7 +94,7 @@ const LatestNews = () => {
                   objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
-                  src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/79995470_455953555354120_7503276654584659968_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=iu-CxuNukGwAX-utIpH&tn=O8IzagTKjFjQ-8lk&_nc_ht=scontent.fcgk30-1.fna&oh=8c0e35f0e1a610899e123efdc352be95&oe=61D7716D'
+                  src='https://scontent.fcgk29-1.fna.fbcdn.net/v/t1.6435-9/79805615_455954322020710_4326915852612927488_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_eui2=AeH_-dZHkOzMU028VdvtRnKf5nWwJlc50gHmdbAmVznSAdE30CC8kuvmouHnzIgpXQI&_nc_ohc=JCL5OLgoo-QAX8P5WBc&_nc_ht=scontent.fcgk29-1.fna&oh=00_AT_vYK8emRIch4Ptv597O2M0GafLyk_Cr6IhicEkB-wk0A&oe=622CEB06'
                 />
               </div>
               <h6 className='px-5 pt-6 pb-2 text-sm italic text-yellow-700'>SPORTS, COMPETITION</h6>
@@ -113,7 +113,7 @@ const LatestNews = () => {
                   objectFit='cover'
                   className='object-cover w-full h-52 rounded-t-md'
                   alt='News'
-                  src='https://scontent.fcgk30-1.fna.fbcdn.net/v/t1.6435-9/76938840_436243783991764_3278345942876553216_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=wSlNYx_hQ5gAX_c9riK&_nc_ht=scontent.fcgk30-1.fna&oh=f16b22230ca955b3d52f59d9643e25f1&oe=61D7B733'
+                  src='https://scontent.fcgk29-1.fna.fbcdn.net/v/t1.6435-9/74460261_436243663991776_6835650295096147968_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_eui2=AeEFmGvXGHrxe6iOkYoxkQ5sC3-iquGblLoLf6Kq4ZuUumWkzR2og7UsbqhzhZGUF1c&_nc_ohc=_fwm0695EnYAX-gMPJW&tn=dg4L8K7fLkj_W39C&_nc_ht=scontent.fcgk29-1.fna&oh=00_AT_e6PVCy5XTdmyNaQRnmuIm2AxyzJSXsgAVwQ0Ek5Y2aw&oe=6229733E'
                 />
               </div>
               <h6 className='px-5 pt-6 pb-2 text-sm italic text-yellow-700'>TEACHER, STUDENT, BONDING</h6>

@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-      <p className='py-3'>&#169; 2022 SMP PAMARDI YUWANA BHAKTI</p>
+      <p className='py-3'>&#169; by Envien Studio | 2022 SMP PAMARDI YUWANA BHAKTI</p>
     </section>
   );
 };
