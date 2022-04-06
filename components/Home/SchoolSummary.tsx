@@ -6,10 +6,13 @@ import SchoolSummaryImage from '../../assets/images/SchoolSummary.jpg';
 const SchoolSummary = () => {
   return (
     <Fragment>
-      <div className='relative w-full max-w-2xl'>
-        <Image alt='School Summary' src={SchoolSummaryImage} />
+      <div className='relative w-full max-w-xl'>
+        <Image alt='School Summary' src={SchoolSummaryImage} width={600} height={700} />
       </div>
-      <div className='w-full max-w-xl space-y-5 text-lg text-gray-800 px-14'>
+      <div className='w-full max-w-2xl px-10 space-y-5 text-lg text-gray-800'>
+        <h1 className='pb-2 font-serif text-3xl font-bold text-center border-b-4 border-yellow-300'>
+          Tentang SMP Pamardi Yuwana Bhakti
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id accusamus atque ipsa soluta repudiandae
           sapiente eum doloremque laboriosam.
@@ -32,7 +35,7 @@ const SchoolSummary = () => {
           natus esse nobis voluptatibus tempora doloremque dolor eligendi inventore distinctio atque exercitationem?
           Aliquid eaque ab rem officia soluta quam excepturi eos.
         </p>
-        <Link href='/' passHref>
+        {/* <Link href='/' passHref>
           <div className='flex items-center w-full max-w-xs italic font-bold text-gray-800 border-b-2 border-transparent cursor-pointer hover:border-b-2 hover:border-yellow-300'>
             Discover Pamardi Yuwana Bhakti &nbsp;
             <svg
@@ -49,7 +52,7 @@ const SchoolSummary = () => {
               />
             </svg>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </Fragment>
   );

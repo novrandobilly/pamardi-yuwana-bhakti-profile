@@ -1,28 +1,13 @@
-.HomeBanner {
-  width: 100%;
-  background-size: cover;
-  min-height: 70vh;
+.homebanner {
   position: relative;
+  width: 100%;
+  background: linear-gradient(0deg, #0f2051a0, #0f205170), url('../../assets/images/HomeBanner/Teamwork.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-bottom: 50px;
-}
-#Banner1 {
-  background-image: url('../../assets/images/HomeBanner/Teamwork.jpg');
-}
-#Banner2 {
-  background-image: url('../../assets/images/HomeBanner/Basket.jpg');
-}
-#Banner3 {
-  background-image: url('../../assets/images/HomeBanner/Chess.jpg');
-}
-#Banner4 {
-  background-image: url('../../assets/images/HomeBanner/PojokSeni.jpg');
-}
-#Banner5 {
-  background-image: url('../../assets/images/HomeBanner/Graduation.jpg');
+  min-height: 600px;
+  color: #fff;
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+  }
 }

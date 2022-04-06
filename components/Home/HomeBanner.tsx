@@ -1,58 +1,17 @@
 import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Link from 'next/link';
+
 import styles from './HomeBanner.module.scss';
 
-const HomeBanner = () => {
+const HomeBanner: React.FC = () => {
   return (
-    <Carousel
-      autoPlay
-      infiniteLoop
-      showStatus={false}
-      showThumbs={false}
-      showIndicators={false}
-      emulateTouch
-      swipeable={false}
-      stopOnHover={false}
-      transitionTime={1000}
-      interval={5000}>
-      <div id={styles.Banner1} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
-          Talent wins games, but teamwork and intelligence wins championships.
-        </q>
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
-      </div>
-      <div id={styles.Banner2} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
-          I’ve learned that something constructive comes from every defeat.
-        </q>
-
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
-      </div>
-      <div id={styles.Banner3} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
-          Nothing is at last sacred but the integrity of your own mind.
-        </q>
-
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
-      </div>
-      <div id={styles.Banner4} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
-          Tell me and I forget.
-          <p>Teach me and I remember.</p>
-          Involve me and I learn.
-        </q>
-
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
-      </div>
-      <div id={styles.Banner5} className={styles.HomeBanner}>
-        <q className='z-20 w-1/3 pl-10 font-serif text-4xl italic leading-tight text-right text-yellow-300'>
-          The future belongs to those who believe in the beauty of their dreams.
-        </q>
-
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-transparent' />
-      </div>
-    </Carousel>
+    <div className={`${styles['homebanner']} w-full flex flex-col items-center justify-center`}>
+      <h3 className='text-2xl'>SMP PAMARDI YUWANA BHAKTI</h3>
+      <h1 className='py-2 mb-10 text-6xl font-bold'>Educating Future Leaders</h1>
+      <Link href='/admission' passHref>
+        <button className='px-5 py-2 text-2xl font-bold bg-transparent border-2 rounded-lg'>Daftar Sekarang</button>
+      </Link>
+    </div>
   );
 };
 

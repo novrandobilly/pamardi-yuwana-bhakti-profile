@@ -4,7 +4,7 @@ import SchoolBuilding from '../../assets/images/SchoolBuilding.jpg';
 import Link from 'next/link';
 import { DateTime } from 'luxon';
 
-const AcademicCalendar = () => {
+const AcademicCalendar: React.FC = () => {
   interface CalendarActivityType {
     date: string;
     activity: string;
