@@ -1,0 +1,22 @@
+.applicants-table {
+  border-collapse: collapse;
+  border: 1px solid #5a5a5a;
+  font-size: 0.9rem;
+  th,
+  td {
+    border: 1px solid #5a5a5a;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100px;
+    &.email,
+    &.phone {
+      text-overflow: initial;
+      white-space: init;
+    }
+    &:first-child {
+      text-align: center;
+    }
+  }
+}

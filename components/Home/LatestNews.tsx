@@ -21,7 +21,7 @@ const LatestNews: React.FC = () => {
               MATHEMATICS, COMPETITION, SCHOOL-RELATIONS
             </h6>
             <h2 className='px-5 py-2 text-2xl font-bold'>
-              Tim Matematika PYB berhasil meraih juara II dalam kompetisi Matematika PL Cup
+              Tim Matematika SMP PYB berhasil meraih juara II dalam kompetisi Matematika PL Cup
             </h2>
             <p className='px-5 pt-2 pb-8 text-gray-400'>November 15, 2021</p>
           </div>
@@ -59,7 +59,9 @@ const LatestNews: React.FC = () => {
                 />
               </div>
               <h6 className='px-5 pt-6 pb-2 text-sm italic text-yellow-700'>ARTS, MUSIC, EXTRACURRICULAR</h6>
-              <h2 className='px-5 py-2 text-lg font-bold'>Pojok Seni, 8 grup siswa/i persembahkan performa menawan</h2>
+              <h2 className='px-5 py-2 text-lg font-bold'>
+                Pojok Seni, 8 grup siswa-siswi persembahkan performa menawan
+              </h2>
               <p className='px-5 pt-2 pb-8 text-gray-400'>November 15, 2021</p>
             </div>
           </Link>

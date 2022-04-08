@@ -5,7 +5,7 @@ import MathCup from '../../assets/images/Article/MathCup.jpg';
 
 const ArticlePost: React.FC = () => {
   return (
-    <div className='flex items-start w-full mx-auto max-w-7xl'>
+    <div className='flex items-start w-full mx-auto max-w-8xl'>
       <div className='w-9/12 pr-10'>
         <p className='mb-10 italic hover:text-yellow-300'>
           <Link href='/'>&lt; Kembali ke beranda</Link>

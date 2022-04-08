@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      maxWidth: {
+        '8xl': '1536px',
+      },
       borderWidth: {
         1: '1px',
       },
