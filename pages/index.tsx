@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         <section className='flex items-center justify-between mx-auto space-x-5 mb-14 max-w-8xl px-14'>
           <LatestNews />
         </section>
-        <section className='w-full mb-14 max-w-8xl px-14'>
+        <section className='w-full mx-auto mb-14 max-w-7xl px-14'>
           <div className='flex flex-col items-center py-4 mx-auto space-y-5 border-t-4 border-b-4 border-yellow-300 '>
             <h1 className='pb-3 font-serif text-4xl text-center '>
               SMP Pamardi Yuwana Bhakti sebagai rumah kedua bagi siswa-siswi untuk mewujudkan cita-citanya.
