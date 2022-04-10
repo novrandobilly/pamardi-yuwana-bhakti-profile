@@ -10,9 +10,9 @@ const AdminLayout: React.FC = ({ children }) => {
           <li className='mb-3 transition-all duration-200 cursor-pointer hover:text-yellow-300 hover:scale-110'>
             <Link href='/admin/applicants'>Pendaftaran</Link>
           </li>
-          <li className='mb-3 text-gray-400 transition-all duration-200 cursor-not-allowed'>Post Artikel</li>
-          <li className='mb-3 text-gray-400 transition-all duration-200 cursor-not-allowed'>Data Siswa Aktif</li>
-          <li className='mb-3 text-gray-400 transition-all duration-200 cursor-not-allowed'>Guru &amp; Karyawan</li>
+          <li className='mb-3 text-gray-500 transition-all duration-200 cursor-not-allowed'>Post Artikel</li>
+          <li className='mb-3 text-gray-500 transition-all duration-200 cursor-not-allowed'>Data Siswa Aktif</li>
+          <li className='mb-3 text-gray-500 transition-all duration-200 cursor-not-allowed'>Guru &amp; Karyawan</li>
         </ul>
       </div>
       <div className='w-10/12 pl-5 pr-10'>{children}</div>

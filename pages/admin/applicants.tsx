@@ -1,10 +1,17 @@
 import React from 'react';
 import AdminLayout from '../../components/AdminLayout';
+import Head from 'next/head';
 import styles from './applicants.module.scss';
 
 const Applicants = () => {
   return (
     <AdminLayout>
+      <Head>
+        <title>Admin Panel</title>
+        <meta name='description' content='Admin Panel' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <main className='flex flex-col justify-between w-full pt-5 mx-auto pb-14 max-w-8xl'>
         <h1 className='mb-3 font-serif text-xl font-bold'>Daftar Calon Peserta Didik</h1>
         <table className={`${styles['applicants-table']} w-full `}>

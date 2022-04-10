@@ -8,9 +8,9 @@ import Facebook from '../assets/icons/Facebook.svg';
 
 const Footer: React.FC = () => {
   return (
-    <section className='flex flex-col items-center justify-center text-white bg-blue-900 '>
-      <div className='flex items-start justify-between w-full pt-5 mx-auto max-w-8xl'>
-        <div className='flex flex-col w-1/4'>
+    <section className='flex flex-col items-center justify-center w-full text-white bg-blue-900 max-w-8xl px-14'>
+      <div className='flex items-start justify-between w-full pt-5 mx-auto '>
+        <div className='flex flex-col w-1/5 min-w-max '>
           <div className='flex items-center w-full mb-5'>
             <div className='bg-white border-white rounded-full' style={{ width: '125px', height: '125px' }}>
               <Image alt='Logo' width={125} height={125} src={Logo} />
@@ -23,6 +23,7 @@ const Footer: React.FC = () => {
             <p className='leading-7'>Kota Bekasi, Jawa Barat, 17413 </p>
           </div>
         </div>
+
         {/* <div className='flex flex-col w-1/4'>
           <h1 className='mb-3 text-xl font-bold'>PYB&apos;s Profile</h1>
           <ul className='space-y-3'>
@@ -78,7 +79,7 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div> */}
-        <div className='flex flex-col w-1/4'>
+        <div className='flex flex-col w-1/5 min-w-max'>
           <h1 className='text-lg font-bold '>Kontak Kami</h1>
           <p className='leading-7'>Telepon: 021 123 4567</p>
           <p className='leading-7'>Whatsapp: 0821 1234 5678</p>

@@ -8,13 +8,13 @@ const Admission: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Admission</title>
-        <meta name='description' content='Admission' />
+        <title>Pendaftaran</title>
+        <meta name='description' content='Pendaftaran' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='w-full bg-yellow-200 '>
-        <div className='flex justify-between w-full py-10 mx-auto bg-transparent max-w-8xl'>
+        <div className='flex justify-between w-full py-10 mx-auto bg-transparent px-14 max-w-8xl'>
           <div className='flex flex-col items-start justify-start bg-transparent'>
             <h1 className='text-3xl'>Form Pendaftaran Calon Peserta Didik</h1>
             <p className='italic '>Tahun Ajaran 2022/2023</p>

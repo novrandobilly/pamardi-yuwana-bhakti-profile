@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <section>
           <HomeBanner />
         </section>
-        <section className='flex items-center mx-auto my-16 max-w-8xl justify-evenly'>
+        <section className='flex items-center mx-auto my-16 px-14 max-w-8xl justify-evenly'>
           <div className='pr-20'>
             <h1 className='pb-2 mb-2 font-serif text-3xl font-bold border-b-4 border-yellow-300'>Visi</h1>
             <p className='text-lg italic leading-loose'>
@@ -43,16 +43,16 @@ const Home: NextPage = () => {
             </p>
           </div>
         </section>
-        <section className='flex justify-between mx-auto mt-10 mb-20 max-w-8xl '>
+        <section className='flex justify-between mx-auto mt-10 mb-20 px-14 max-w-8xl '>
           <PrincipalMessage />
         </section>
-        <section className='flex items-start justify-between mx-auto mb-20 max-w-8xl'>
+        <section className='flex items-start justify-between mx-auto mb-20 px-14 max-w-8xl'>
           <SchoolSummary />
         </section>
-        <section className='flex flex-col items-center mx-auto mb-0 max-w-8xl'>
+        <section className='flex flex-col items-center mx-auto mb-0 px-14 max-w-8xl'>
           <LifeAtOurSchool />
         </section>
-        <section className='flex flex-col items-center my-12'>
+        <section className='flex flex-col items-center my-12 px-14'>
           <h1 className='font-serif text-4xl font-bold text-blue-600'>&#34;</h1>
           <p className='w-3/5 text-2xl text-center text-gray-800'>
             Selain pembelajaran akademik, disini saya memiliki teman-teman yang baik, gurunya asik-asik, dan kegiatan
@@ -64,21 +64,23 @@ const Home: NextPage = () => {
         {/* <section className='flex items-center justify-between mx-auto mb-28 max-w-8xl'>
           <AcademicCalendar />
         </section> */}
-        <section className='flex items-center justify-between mx-auto space-x-5 mb-14 max-w-8xl'>
+        <section className='flex items-center justify-between mx-auto space-x-5 mb-14 max-w-8xl px-14'>
           <LatestNews />
         </section>
-        <section className='flex flex-col items-center w-full py-4 mx-auto space-y-5 border-t-4 border-b-4 border-yellow-300 mb-14 max-w-8xl'>
-          <h1 className='pb-3 font-serif text-4xl text-center '>
-            SMP Pamardi Yuwana Bhakti sebagai rumah kedua bagi siswa-siswi untuk mewujudkan cita-citanya.
-          </h1>
-          <Link passHref href='/admission'>
-            <button className='px-5 py-2 text-2xl font-bold text-blue-900 transition-all transform bg-yellow-400 border-2 rounded hover:scale-110'>
-              Daftar Sekarang
-            </button>
-          </Link>
+        <section className='w-full mb-14 max-w-8xl px-14'>
+          <div className='flex flex-col items-center py-4 mx-auto space-y-5 border-t-4 border-b-4 border-yellow-300 '>
+            <h1 className='pb-3 font-serif text-4xl text-center '>
+              SMP Pamardi Yuwana Bhakti sebagai rumah kedua bagi siswa-siswi untuk mewujudkan cita-citanya.
+            </h1>
+            <Link passHref href='/admission'>
+              <button className='px-5 py-2 text-2xl font-bold text-blue-900 transition-all transform bg-yellow-400 border-2 rounded hover:scale-110'>
+                Daftar Sekarang
+              </button>
+            </Link>
+          </div>
         </section>
 
-        <section className='w-full py-4 bg-yellow-100'>
+        <section className='w-full py-4 bg-yellow-100 px-14'>
           <div className='flex items-start justify-between w-full mx-auto max-w-8xl'>
             <div className='flex flex-col items-start justify-start w-1/2'>
               <div className='flex items-center justify-start mb-2'>
