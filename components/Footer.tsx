@@ -8,8 +8,8 @@ import Facebook from '../assets/icons/Facebook.svg';
 
 const Footer: React.FC = () => {
   return (
-    <section className='flex flex-col items-center justify-center w-full text-white bg-blue-900 max-w-8xl px-14'>
-      <div className='flex items-start justify-between w-full pt-5 mx-auto '>
+    <section className='flex flex-col items-center justify-center w-full text-white bg-blue-900 px-14'>
+      <div className='flex items-start justify-between w-full pt-5 mx-auto max-w-8xl'>
         <div className='flex flex-col w-1/5 min-w-max '>
           <div className='flex items-center w-full mb-5'>
             <div className='bg-white border-white rounded-full' style={{ width: '125px', height: '125px' }}>
