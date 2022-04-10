@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Navgiation Bar */}
-        <ul className='flex justify-between w-48 text-base leading-4 '>
+        <ul className='flex justify-between w-24 text-base leading-4 '>
           {/* <li className='pr-5 hover:text-blue-800 '>
           <Link passHref href='/'>
             Home
@@ -93,19 +93,19 @@ const Header: React.FC = () => {
           </Link>
         </li> */}
           <li
-            className={`${styles['nav-item']} font-serif transition-all duration-150 ease-in-out hover:text-blue-800`}>
+            className={`${styles['nav-item']} font-serif font-bold transition-all duration-150 ease-in-out hover:text-blue-800`}>
             <Link passHref href='/admission'>
               Pendaftaran
             </Link>
           </li>
-          <li className='flex items-center justify-between w-14 hover:text-blue-800'>
+          {/* <li className='flex items-center justify-between w-14 hover:text-blue-800'>
             <span className='cursor-pointer'>
               <Image width={20} height={20} layout='fixed' src={ID} alt='Bahasa Indonesia' />
             </span>
             <span className='cursor-pointer'>
               <Image width={20} height={20} layout='fixed' src={UK} alt='English' />
             </span>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
