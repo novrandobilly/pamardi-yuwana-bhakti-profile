@@ -1,17 +1,26 @@
-import type { NextPage } from 'next';
+import type { NextPage, GetStaticProps } from 'next';
+import { connectToDatabase } from '../lib/db';
 import Head from 'next/head';
 import HomeBanner from '../components/Home/HomeBanner';
 import SchoolSummary from '../components/Home/SchoolSummary';
 import LifeAtOurSchool from '../components/Home/LifeAtOurSchool';
-import AcademicCalendar from '../components/Home/AcademicCalendar';
+// import AcademicCalendar from '../components/Home/AcademicCalendar';
 import PrincipalMessage from '../components/Home/PrincipalMessage';
 import LatestNews from '../components/Home/LatestNews';
 import Link from 'next/link';
-import Image from 'next/image';
-import Masker from '../assets/icons/Masker.svg';
-import Needle from '../assets/icons/Needle.svg';
+// import Image from 'next/image';
+// import Masker from '../assets/icons/Masker.svg';
+// import Needle from '../assets/icons/Needle.svg';
 
-const Home: NextPage = () => {
+export type ArticleType = {
+  _id: string;
+  title: string;
+  dateCreated: string;
+  tags: Array<string>;
+  images: Array<string>;
+};
+
+const Home: NextPage<{ article: Array<ArticleType> }> = ({ article }) => {
   return (
     <div>
       <Head>
@@ -65,7 +74,7 @@ const Home: NextPage = () => {
           <AcademicCalendar />
         </section> */}
         <section className='flex items-center justify-between mx-auto space-x-5 mb-14 max-w-8xl px-14'>
-          <LatestNews />
+          <LatestNews article={article} />
         </section>
         <section className='w-full mx-auto mb-14 max-w-7xl px-14'>
           <div className='flex flex-col items-center py-4 mx-auto space-y-5 border-t-4 border-b-4 border-yellow-300 '>
@@ -80,7 +89,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className='w-full py-4 bg-yellow-100 px-14'>
+        {/* <section className='w-full py-4 bg-yellow-100 px-14'>
           <div className='flex items-start justify-between w-full mx-auto max-w-8xl'>
             <div className='flex flex-col items-start justify-start w-1/2'>
               <div className='flex items-center justify-start mb-2'>
@@ -101,10 +110,33 @@ const Home: NextPage = () => {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const client = await connectToDatabase();
+  const db = client.db();
+  try {
+    const data = await db
+      .collection('articles')
+      .find()
+      .project({ _id: 1, title: 1, tags: 1, dateCreated: 1, images: 1 })
+      .sort({ dateCreated: -1 })
+      .limit(6)
+      .toArray();
+    const article = JSON.parse(JSON.stringify(data));
+    return {
+      props: { article },
+    };
+  } catch (err) {
+    console.log(err);
+    return {
+      props: {},
+    };
+  }
+};
