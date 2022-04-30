@@ -26,6 +26,7 @@ const Admin: NextPage = () => {
     <AdminLayout>
       <form
         onSubmit={handleSubmit}
+        style={{ marginTop: '20vh' }}
         className='flex flex-col items-center justify-center w-full max-w-md p-5 mx-auto text-white bg-blue-900 rounded-md border-1 '>
         <div className='mb-3'>
           <Image alt='Key' src={Key} width={65} height={65} />
