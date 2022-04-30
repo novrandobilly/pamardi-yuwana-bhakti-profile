@@ -1,10 +1,46 @@
 import type { NextPage } from 'next';
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import Head from 'next/head';
 import Logo from '../assets/images/Logo.png';
 import Image from 'next/image';
 
 const Admission: NextPage = () => {
+  const [studentName, setStudentName] = useState<string>('');
+  const [gender, setGender] = useState<string>('');
+  const [dateOfBirth, setDateOfBirth] = useState<string>('');
+  const [schoolOrigin, setSchoolOrigin] = useState<string>('');
+  const [guardianName, setGuardianName] = useState<string>('');
+  const [guardianPhone, setGuardianPhone] = useState<string>('');
+  const [guardianEmail, setGuardianEmail] = useState<string>('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const payload = {
+      studentName,
+      gender,
+      dateOfBirth,
+      schoolOrigin,
+      guardianName,
+      guardianPhone,
+      guardianEmail,
+    };
+
+    try {
+      const res = await fetch('/api/admission/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+      const resJSON = await res.json();
+      console.log(resJSON);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <Fragment>
       <Head>
@@ -18,7 +54,7 @@ const Admission: NextPage = () => {
           <div className='flex flex-col items-start justify-start bg-transparent'>
             <h1 className='text-3xl'>Form Pendaftaran Calon Peserta Didik</h1>
             <p className='italic '>Tahun Ajaran 2022/2023</p>
-            <form className='w-full max-w-lg mt-5'>
+            <form className='w-full max-w-lg mt-5' onSubmit={handleSubmit}>
               <div className='flex mb-3'>
                 <label className='w-56 mr-2 '>
                   Nama Calon Peserta Didik <span className='text-red-600'>*</span>
@@ -26,16 +62,24 @@ const Admission: NextPage = () => {
                 <input
                   className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'
                   type='text'
+                  name='studentName'
                   placeholder='Nama Lengkap'
+                  value={studentName}
+                  onChange={(e) => setStudentName(e.target.value)}
                 />
               </div>
               <div className='flex mb-3'>
                 <label className='w-56 mr-2 '>
                   Jenis kelamin<span className='text-red-600'>*</span>
                 </label>
-                <select className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'>
-                  <option value='Male'>Laki-laki</option>
-                  <option value='Female'>Perempuan</option>
+                <select
+                  className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'
+                  name='gender'
+                  onChange={(e) => setGender(e.target.value)}
+                  value={gender}>
+                  <option value=''></option>
+                  <option value='male'>Laki-laki</option>
+                  <option value='female'>Perempuan</option>
                 </select>
               </div>
               <div className='flex mb-3'>
@@ -46,6 +90,9 @@ const Admission: NextPage = () => {
                   type='date'
                   className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'
                   placeholder='Nama Lengkap'
+                  name='dateOfBirth'
+                  value={dateOfBirth}
+                  onChange={(e) => setDateOfBirth(e.target.value)}
                 />
               </div>
               <div className='flex mb-3'>
@@ -56,6 +103,9 @@ const Admission: NextPage = () => {
                   className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'
                   type='text'
                   placeholder='Asal Sekolah'
+                  name='schoolOrigin'
+                  value={schoolOrigin}
+                  onChange={(e) => setSchoolOrigin(e.target.value)}
                 />
               </div>
               <div className='flex mb-3'>
@@ -65,7 +115,10 @@ const Admission: NextPage = () => {
                 <input
                   className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'
                   type='text'
-                  placeholder='Nama Orantua/Wali'
+                  placeholder='Nama Orangtua/Wali'
+                  name='guardianName'
+                  value={guardianName}
+                  onChange={(e) => setGuardianName(e.target.value)}
                 />
               </div>
               <div className='flex mb-3'>
@@ -76,6 +129,9 @@ const Admission: NextPage = () => {
                   className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'
                   type='text'
                   placeholder='Nomor HP Orangtua/Wali'
+                  name='guardianPhone'
+                  value={guardianPhone}
+                  onChange={(e) => setGuardianPhone(e.target.value)}
                 />
               </div>
               <div className='flex mb-3'>
@@ -86,6 +142,9 @@ const Admission: NextPage = () => {
                   className='py-1 pl-2 text-sm bg-transparent border-gray-500 rounded-lg outline-none w-72 border-1'
                   type='text'
                   placeholder='Email Orangtua/Wali'
+                  name='guardianEmail'
+                  value={guardianEmail}
+                  onChange={(e) => setGuardianEmail(e.target.value)}
                 />
               </div>
               <p className='w-full max-w-lg text-sm italic'>

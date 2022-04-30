@@ -1,15 +1,18 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { LanguageContextProvider } from '../intl/LanguageProvider';
+import { SessionProvider } from 'next-auth/react';
 import Layout from '../components/Layout';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
-    <LanguageContextProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </LanguageContextProvider>
+    <SessionProvider session={session}>
+      <LanguageContextProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </LanguageContextProvider>
+    </SessionProvider>
   );
 }
 

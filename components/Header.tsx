@@ -2,11 +2,21 @@ import React from 'react';
 import Image from 'next/image';
 import Logo from '../assets/images/Logo.png';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import ID from '../assets/icons/ID.svg';
 import UK from '../assets/icons/UK.svg';
+import { useSession, signOut } from 'next-auth/react';
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    await signOut({ redirect: false });
+    router.push('/admin');
+  };
+
   return (
     <div className='fixed z-20 flex items-center justify-between w-full px-10 py-2 mx-auto bg-white bg-opacity-90'>
       <div className='flex items-center justify-between w-full mx-auto max-w-8xl'>
@@ -18,7 +28,7 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Navgiation Bar */}
-        <ul className='flex justify-between w-24 text-base leading-4 '>
+        <ul className='flex justify-between text-base leading-4 w-max '>
           {/* <li className='pr-5 hover:text-blue-800 '>
           <Link passHref href='/'>
             Home
@@ -98,6 +108,13 @@ const Header: React.FC = () => {
               Pendaftaran
             </Link>
           </li>
+          {session && session.id && session.adminRole && (
+            <li
+              className={`${styles['nav-item']} font-serif font-bold transition-all ml-7 duration-150 ease-in-out hover:text-blue-800 cursor-pointer`}
+              onClick={handleLogout}>
+              Logout
+            </li>
+          )}
           {/* <li className='flex items-center justify-between w-14 hover:text-blue-800'>
             <span className='cursor-pointer'>
               <Image width={20} height={20} layout='fixed' src={ID} alt='Bahasa Indonesia' />
