@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className='fixed z-20 flex items-center justify-between w-full px-10 py-2 mx-auto bg-white bg-opacity-90'>
+    <div className='fixed z-20 flex items-center justify-between w-full px-10 py-2 transform -translate-x-1/2 bg-white max-w-8xl bg-opacity-90 left-1/2'>
       <div className='flex items-center justify-between w-full mx-auto max-w-8xl'>
         {/* Pamardi Yuwana Bhakti's Logo */}
         <Link passHref href='/'>

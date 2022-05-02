@@ -1,0 +1,6 @@
+_id,studentName,gender,dateOfBirth,schoolOrigin,guardianName,guardianPhone,guardianEmail,dateCreated
+626a2eb92c741720f80d579f,Billy Novrando,male,1993-11-30,SD Gonzaga,asdfasdf,12341234123,asefasefsae@gmail.com,Thu Apr 28 2022 13:05:45 GMT+0700 (Western Indonesia Time)
+626deafb65c703ed13224fd4,Rean Schwarzer,male,2000-11-08,SD Thors,Teo Schwarzer,11223344,tschwarzer@gmail.com,Sun May 01 2022 09:05:47 GMT+0700 (Western Indonesia Time)
+626dee7265c703ed13224fd5,Laura S. Arseid,female,2004-12-01,Arseid School,Victor S. Arseid,08080808,varseid@gmail.com,Sun May 01 2022 09:20:34 GMT+0700 (Western Indonesia Time)
+626deeb465c703ed13224fd6,Alisa Reinford,female,2004-05-26,Reinford School,Gwyn Reinford,08080808111,gwyn@reinford.com,Sun May 01 2022 09:21:40 GMT+0700 (Western Indonesia Time)
+626df08d65c703ed13224fd7,Emma Millstein,female,2004-05-26,Wizard School,Vita Clotilde,08080808111,clotilde@gmail.com,Sun May 01 2022 09:29:33 GMT+0700 (Western Indonesia Time)
