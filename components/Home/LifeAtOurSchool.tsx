@@ -4,9 +4,9 @@ import styles from './LifeAtOurSchool.module.scss';
 
 const LifeAtOurSchool: React.FC = () => {
   return (
-    <Fragment>
-      <h1 className='pb-2 mb-8 font-serif text-3xl font-bold text-gray-800 border-b-4 border-yellow-300'>
-        LIFE AT OUR SCHOOL
+    <section className='flex flex-col items-center px-5 mx-auto mb-0 lg:px-10 max-w-8xl'>
+      <h1 className='mb-4 font-serif font-bold text-center text-gray-800 border-b-4 border-yellow-300 lg:pb-2 lg:mb-8 lg:text-3xl'>
+        KEGIATAN KAMI DI SEKOLAH
       </h1>
       {/* <p className='w-full max-w-lg mt-5 mb-5 text-lg text-center text-gray-800'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, adipisci ratione? Animi quisquam eveniet
@@ -17,7 +17,7 @@ const LifeAtOurSchool: React.FC = () => {
           View all activities
         </Link>
       </p> */}
-      <div className='flex items-center justify-between w-full space-x-4'>
+      <div className='flex flex-col items-center justify-between w-full lg:space-x-4 lg:flex-row'>
         <div id={styles.Activity1} className={styles.ActivityItem}>
           <div className={styles.Backdrop}>
             <p className={styles.ActivityTitle}>ENGLISH LEARNING</p>
@@ -59,7 +59,7 @@ const LifeAtOurSchool: React.FC = () => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 };
 

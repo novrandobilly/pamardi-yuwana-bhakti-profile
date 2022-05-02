@@ -5,9 +5,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 350px;
   color: #fff;
   h1 {
     font-family: 'Times New Roman', Times, serif;
+  }
+}
+@media screen and (min-width: 768px) {
+  .homebanner {
+    min-height: 600px;
   }
 }

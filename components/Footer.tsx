@@ -8,16 +8,18 @@ import Facebook from '../assets/icons/Facebook.svg';
 
 const Footer: React.FC = () => {
   return (
-    <section className='flex flex-col items-center justify-center w-full text-white bg-blue-900 px-14'>
-      <div className='flex items-start justify-between w-full pt-5 mx-auto max-w-8xl'>
-        <div className='flex flex-col w-1/5 min-w-max '>
-          <div className='flex items-center w-full mb-5'>
+    <section className='flex flex-col items-center justify-center w-full px-5 text-white bg-blue-900 none lg:px-10'>
+      <div className='flex flex-col items-center justify-between w-full pt-5 mx-auto lg:items-start lg:flex-row max-w-8xl'>
+        <div className='flex flex-col items-center mb-10 lg:w-1/5'>
+          <div className='flex items-center justify-center w-full mb-5'>
             <div className='bg-white border-white rounded-full' style={{ width: '125px', height: '125px' }}>
               <Image alt='Logo' width={125} height={125} src={Logo} />
             </div>
-            <h1 className='w-1/3 ml-5 font-serif text-2xl leading-10 '>PAMARDI YUWANA BHAKTI</h1>
+            <h1 className='w-1/3 ml-5 font-serif text-2xl leading-10 text-center lg:text-left '>
+              PAMARDI YUWANA BHAKTI
+            </h1>
           </div>
-          <div>
+          <div className='flex flex-col items-center lg:items-start'>
             <p className='leading-7'>Jl. Cendrawasih, Komp. Bumi Makmur</p>
             <p className='leading-7'>Jati Makmur, Kec. Pondokgede</p>
             <p className='leading-7'>Kota Bekasi, Jawa Barat, 17413 </p>
@@ -79,13 +81,13 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div> */}
-        <div className='flex flex-col w-1/5 min-w-max'>
+        <div className='flex flex-col items-center w-full lg:items-start lg:w-1/5 min-w-max'>
           <h1 className='text-lg font-bold '>Kontak Kami</h1>
           <p className='leading-7'>Telepon: 021 123 4567</p>
           <p className='leading-7'>Whatsapp: 0821 1234 5678</p>
           <p className='mb-5 leading-7'>Email: pamardi.yuwana@bhakti.com</p>
           <h1 className='mb-2 text-lg font-bold'>Lihat Aktivitas Kami</h1>
-          <ul className='flex w-full space-x-5'>
+          <ul className='flex justify-center w-full space-x-5 lg:justify-start'>
             <li className='cursor-pointer'>
               <a
                 href='https://instagram.com/officialosispyb?utm_medium=copy_link'
@@ -107,7 +109,9 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-      <p className='py-3'>&#169; by Envien Studio | 2022 SMP PAMARDI YUWANA BHAKTI</p>
+      <p className='py-2 mt-5 text-xs text-center lg:py-3 lg:text-base'>
+        &#169; by Envien Studio | 2022 SMP PAMARDI YUWANA BHAKTI
+      </p>
     </section>
   );
 };

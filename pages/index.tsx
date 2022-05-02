@@ -34,55 +34,54 @@ const Home: NextPage<{ article: Array<ArticleType> }> = ({ article }) => {
         <section>
           <HomeBanner />
         </section>
-        <section className='flex items-center mx-auto my-16 px-14 max-w-8xl justify-evenly'>
-          <div className='pr-20'>
-            <h1 className='pb-2 mb-2 font-serif text-3xl font-bold border-b-4 border-yellow-300'>Visi</h1>
-            <p className='text-lg italic leading-loose'>
+        <section className='flex flex-col items-center px-5 mx-auto my-5 lg:my-16 lg:flex-row lg:px-10 max-w-8xl justify-evenly'>
+          <div className='mb-5 lg:pr-10'>
+            <h1 className='mb-2 font-serif text-xl font-bold border-b-4 border-yellow-300 lg:pb-2 lg:text-3xl'>Visi</h1>
+            <p className='italic leading-6 lg:leading-loose lg:text-lg'>
               &ldquo;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur suscipit repudiandae corrupti
               eius pariatur consectetur temporibus rem reiciendis omnis nisi exercitationem veritatis expedita,
               molestias magni.&rdquo;
             </p>
           </div>
-          <div className='pr-20'>
-            <h1 className='pb-2 mb-2 font-serif text-3xl font-bold border-b-4 border-yellow-300'>Misi</h1>
-            <p className='text-lg italic leading-loose'>
+          <div className='mb-5 '>
+            <h1 className='mb-2 font-serif text-xl font-bold border-b-4 border-yellow-300 lg:pb-2 lg:text-3xl'>Misi</h1>
+            <p className='italic leading-6 lg:leading-loose lg:text-lg'>
               &ldquo;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur suscipit repudiandae corrupti
               eius pariatur consectetur temporibus rem reiciendis omnis nisi exercitationem veritatis expedita,
               molestias magni.&rdquo;
             </p>
           </div>
         </section>
-        <section className='flex justify-between mx-auto mt-10 mb-20 px-14 max-w-8xl '>
-          <PrincipalMessage />
-        </section>
-        <section className='flex items-start justify-between mx-auto mb-20 px-14 max-w-8xl'>
+
+        <PrincipalMessage />
+        <div className='pt-5 lg:pt-10 bg-yellow-50'>
           <SchoolSummary />
-        </section>
-        <section className='flex flex-col items-center mx-auto mb-0 px-14 max-w-8xl'>
-          <LifeAtOurSchool />
-        </section>
-        <section className='flex flex-col items-center my-12 px-14'>
-          <h1 className='font-serif text-4xl font-bold text-blue-600'>&#34;</h1>
-          <p className='w-3/5 text-2xl text-center text-gray-800'>
+        </div>
+        <LifeAtOurSchool />
+        <section className='flex flex-col items-center px-5 mb-10 lg:my-12 lg:px-14'>
+          <h1 className='font-serif text-2xl font-bold text-blue-600 lg:text-4xl'>&#34;</h1>
+          <p className='w-full text-base text-center text-gray-800 lg:text-2xl lg:w-3/5'>
             Selain pembelajaran akademik, disini saya memiliki teman-teman yang baik, gurunya asik-asik, dan kegiatan
             sekolahnya seru-seru.
           </p>
-          <span className='mt-5 font-serif italic text-blue-600'>2020 Pamardi Yuwana Bhakti Alumnus</span>
+          <span className='mt-3 font-serif text-xs italic text-blue-600 lg:text-base lg:mt-5'>
+            2020 Pamardi Yuwana Bhakti Alumnus
+          </span>
         </section>
 
         {/* <section className='flex items-center justify-between mx-auto mb-28 max-w-8xl'>
           <AcademicCalendar />
         </section> */}
-        <section className='flex items-center justify-between mx-auto space-x-5 mb-14 max-w-8xl px-14'>
+        <div className='pt-5 lg:pt-10 bg-yellow-50'>
           <LatestNews article={article} />
-        </section>
-        <section className='w-full mx-auto mb-14 max-w-7xl px-14'>
+        </div>
+        <section className='w-full px-5 mx-auto py-14 max-w-7xl lg:px-10'>
           <div className='flex flex-col items-center py-4 mx-auto space-y-5 border-t-4 border-b-4 border-yellow-300 '>
-            <h1 className='pb-3 font-serif text-4xl text-center '>
+            <h1 className='pb-0 font-serif text-base text-center lg:pb-3 lg:text-4xl '>
               SMP Pamardi Yuwana Bhakti sebagai rumah kedua bagi siswa-siswi untuk mewujudkan cita-citanya.
             </h1>
             <Link passHref href='/admission'>
-              <button className='px-5 py-2 text-2xl font-bold text-blue-900 transition-all transform bg-yellow-400 border-2 rounded hover:scale-110'>
+              <button className='px-5 py-2 text-base font-bold text-blue-900 transition-all transform bg-yellow-400 border-2 rounded lg:text-2xl hover:scale-110'>
                 Daftar Sekarang
               </button>
             </Link>
