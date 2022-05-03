@@ -13,7 +13,7 @@ const Admission: NextPage = () => {
   const [guardianName, setGuardianName] = useState<string>('');
   const [guardianPhone, setGuardianPhone] = useState<string>('');
   const [guardianEmail, setGuardianEmail] = useState<string>('');
-  const [confirmation, setConfirmation] = useState<boolean>(true);
+  const [confirmation, setConfirmation] = useState<boolean>(false);
   const [submitted, setSubmitted] = useState<boolean>(false);
 
   const handleConfirmation = (e: React.MouseEvent<HTMLButtonElement>) => {
