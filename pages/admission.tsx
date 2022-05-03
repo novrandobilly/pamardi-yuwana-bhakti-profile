@@ -15,6 +15,7 @@ const Admission: NextPage = () => {
   const [guardianEmail, setGuardianEmail] = useState<string>('');
   const [confirmation, setConfirmation] = useState<boolean>(false);
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleConfirmation = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
@@ -29,6 +30,7 @@ const Admission: NextPage = () => {
 
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    setIsLoading(true);
 
     const payload = {
       studentName,
@@ -58,8 +60,10 @@ const Admission: NextPage = () => {
       setGuardianPhone('');
       setGuardianEmail('');
       setSubmitted(true);
+      setIsLoading(false);
     } catch (err) {
       console.log(err);
+      setIsLoading(false);
     }
   };
 
@@ -77,7 +81,7 @@ const Admission: NextPage = () => {
         style={{ transform: `translateY(${confirmation ? '-50%' : '-500%'}) translateX(-50%)` }}>
         <h1 className='mb-5 text-lg font-bold text-center'>Anda yakin untuk mengirimkan data tersebut?</h1>
         <div className='flex items-center justify-evenly'>
-          {!submitted ? (
+          {!submitted && !isLoading && (
             <Fragment>
               <button className='px-3 border-black rounded-md cursor-pointer border-1' onClick={handleCancel}>
                 Cancel
@@ -88,7 +92,9 @@ const Admission: NextPage = () => {
                 Submit
               </button>
             </Fragment>
-          ) : (
+          )}
+          {isLoading && <p>Submitting...</p>}
+          {submitted && !isLoading && (
             <p className='text-center'>
               Data berhasil terkirim.{' '}
               <span onClick={handleCancel} className='italic text-blue-500 cursor-pointer hover:text-yellow-300'>
