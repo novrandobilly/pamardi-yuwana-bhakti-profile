@@ -32,51 +32,57 @@ const ArticlePost: React.FC<{
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='flex items-start w-full pt-4 mx-auto max-w-8xl px-14'>
-        <div className='w-9/12 pr-10'>
+      <div className='flex flex-col items-start w-full px-5 pt-4 mx-auto lg:flex-row max-w-8xl lg:px-10'>
+        <div className='lg:w-9/12 lg:pr-10'>
           <p className='mb-5 italic hover:text-yellow-300'>
             <Link href='/'>&lt; Kembali ke beranda</Link>
           </p>
-          <h1 className='pb-2 mb-8 font-serif text-3xl font-bold text-blue-900 border-b-4 border-yellow-300'>
+          <h1 className='mb-3 font-serif text-lg font-bold text-blue-900 border-b-2 border-yellow-300 lg:border-b-4 lg:pb-2 lg:mb-8 lg:text-3xl'>
             {article.title}
           </h1>
           <Image alt='Article' src={article.images[0]} width={1270} height={600} objectFit='cover' />
-          <div className='flex items-center justify-between w-full pt-2 mb-10'>
-            <div>
-              <p className='font-serif italic text-gray-500'>
+          <div className='flex flex-col items-start justify-between w-full mb-4 lg:mb-10 lg:pt-2 lg:items-center lg:flex-row'>
+            <div className='mb-2 lg:mb-0'>
+              <p className='font-serif text-xs italic text-gray-500 lg:text-base'>
                 Diterbitkan pada {new Date(article.dateCreated).toLocaleDateString()}
               </p>
-              <p className='font-serif italic text-gray-500'>Ditulis oleh {article.author}</p>
+              <p className='font-serif text-xs italic text-gray-500 lg:text-base'>Ditulis oleh {article.author}</p>
             </div>
-            <div className='flex items-center justify-between '>
+            <div className='flex flex-wrap items-center justify-between lg:flex-nowrap '>
               {article.tags.map((tag, index) => (
-                <span key={index} className='px-4 mx-1 font-bold text-gray-100 bg-blue-900 rounded-full'>
+                <span
+                  key={index}
+                  className='px-4 mx-1 mb-1 text-xs font-bold text-gray-100 bg-blue-900 rounded-full lg:text-base lg:mb-0'>
                   {tag.toUpperCase()}
                 </span>
               ))}
             </div>
           </div>
-          <p className='w-full mt-5 mb-5 text-lg font-bold text-left text-gray-800'>{article.summary}</p>
+          <p className='w-full mt-5 mb-5 text-base font-bold text-left text-gray-800 lg:text-lg'>{article.summary}</p>
           {article.content.split('\n').map((paragraph, index) => (
-            <p className='w-full mt-5 mb-5 font-serif text-base text-left text-gray-800' key={index}>
+            <p className='w-full mt-5 mb-5 font-serif text-base text-left text-gray-800 ' key={index}>
               {paragraph}
             </p>
           ))}
 
           <div className='flex justify-between w-full'>
             <Link passHref href={`/blog/${prevArticleId}`}>
-              <p className='mt-5 mb-5 italic text-left text-yellow-500 cursor-pointer text-md'>&lt;&lt;Previous</p>
+              <p className='mb-5 text-sm italic text-left text-yellow-500 cursor-pointer lg:my-5 lg:text-base'>
+                &lt;&lt;Previous
+              </p>
             </Link>
             <Link passHref href={`/blog/${nextArticleId}`}>
-              <p className='mt-5 mb-5 italic text-left text-yellow-500 cursor-pointer text-md'>Next&gt;&gt;</p>
+              <p className='mb-5 text-sm italic text-left text-yellow-500 cursor-pointer lg:my-5 lg:text-base'>
+                Next&gt;&gt;
+              </p>
             </Link>
           </div>
         </div>
-        <div className='w-3/12 p-4 bg-yellow-200 rounded-lg mt-36'>
-          <h2 className='mb-2 text-2xl font-bold text-blue-900'>Artikel lainnya</h2>
+        <div className='w-full p-4 mb-5 bg-yellow-200 rounded-lg lg:w-3/12 lg:mt-36'>
+          <h2 className='mb-2 text-base font-bold text-blue-900 lg:text-2xl'>Artikel lainnya</h2>
           <ul className='pl-6 italic list-disc'>
             {allArticleExceptCurrent.map((article, index) => (
-              <li key={index} className='mb-2'>
+              <li key={index} className='mb-2 leading-5 '>
                 <Link href={`/blog/${article._id}`}>{article.title}</Link>
               </li>
             ))}
