@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         {/* Pamardi Yuwana Bhakti's Logo */}
         <Link passHref href='/'>
           <div className='flex items-center w-1/3 '>
-            <Image src={Logo} objectFit='contain' width={50} height={50} className='cursor-pointer' alt='School Logo' />
+            <Image src={Logo} objectFit='contain' width={48} height={48} className='cursor-pointer' alt='School Logo' />
           </div>
         </Link>
 

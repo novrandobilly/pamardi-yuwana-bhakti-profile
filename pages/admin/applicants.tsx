@@ -50,8 +50,8 @@ const Applicants: NextPage<{ applicants: Array<ApplicantsType> }> = ({ applicant
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='flex flex-col justify-between w-full pt-5 mx-auto pb-14 max-w-8xl'>
-        <div className='flex items-center justify-between w-full mb-3'>
-          <h1 className='font-serif text-xl font-bold '>Daftar Calon Peserta Didik</h1>
+        <div className='flex flex-col items-start justify-between w-full mb-3 sm:items-center sm:flex-row '>
+          <h1 className='mb-2 font-serif text-xl font-bold sm:mb-0'>Daftar Calon Peserta Didik</h1>
           <NoSSR>
             <CSVLink
               href={'/'}

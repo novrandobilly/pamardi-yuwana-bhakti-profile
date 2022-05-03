@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
   return (
     <section className='flex flex-col items-center justify-center w-full px-5 text-white bg-blue-900 none md:px-10'>
       <div className='flex flex-col items-center justify-between w-full pt-5 mx-auto md:items-start md:flex-row max-w-8xl'>
-        <div className='flex flex-col items-center mb-10 md:w-2/5'>
-          <div className='flex items-center justify-center w-full mb-5'>
+        <div className='flex flex-col mb-10 md:items-start md:w-2/5'>
+          <div className='flex items-center justify-center w-full mb-5 md:justify-start'>
             <div className='bg-white border-white rounded-full' style={{ width: '125px', height: '125px' }}>
               <Image alt='Logo' width={125} height={125} src={Logo} />
             </div>
@@ -81,13 +81,13 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div> */}
-        <div className='flex flex-col items-center w-full md:items-start md:w-1/5 min-w-max'>
+        <div className='flex flex-col items-center w-full md:items-end md:w-1/5 min-w-max'>
           <h1 className='text-lg font-bold '>Kontak Kami</h1>
-          <p className='leading-7'>Telepon: 021 123 4567</p>
-          <p className='leading-7'>Whatsapp: 0821 1234 5678</p>
-          <p className='mb-5 leading-7'>Email: pamardi.yuwana@bhakti.com</p>
-          <h1 className='mb-2 text-lg font-bold'>Lihat Aktivitas Kami</h1>
-          <ul className='flex justify-center w-full space-x-5 md:justify-start'>
+          <p className='leading-7 '>Telepon: 021 123 4567</p>
+          <p className='leading-7 '>Whatsapp: 0821 1234 5678</p>
+          <p className='mb-5 leading-7 '>Email: pamardi.yuwana@bhakti.com</p>
+          <h1 className='mb-2 text-lg font-bold '>Lihat Aktivitas Kami</h1>
+          <ul className='flex justify-center w-full space-x-5 md:justify-end'>
             <li className='cursor-pointer'>
               <a
                 href='https://instagram.com/officialosispyb?utm_medium=copy_link'

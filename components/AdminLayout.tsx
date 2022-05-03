@@ -19,7 +19,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='flex justify-center w-full pt-1 mx-auto max-w-8xl'>
-        <div className='flex flex-col items-start justify-start w-2/12 p-3 text-gray-200 bg-blue-900 min-h-8/10 rounded-tr-2xl'>
+        <div className='flex-col items-start justify-start hidden w-2/12 p-3 text-gray-200 bg-blue-900 lg:flex min-h-8/10 rounded-tr-2xl'>
           <h1 className='w-full mb-3 text-xl font-bold border-b-2 border-yellow-300'>Admin Panel</h1>
           {session && session.id && session.adminRole === 'general-admin' && (
             <ul>
@@ -36,7 +36,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
             </ul>
           )}
         </div>
-        <div className='w-10/12 pl-5 pr-10'>{children}</div>
+        <div className='w-full px-5 lg:w-10/12 lg:pl-5 lg:pr-10'>{children}</div>
       </div>
     </Fragment>
   );
