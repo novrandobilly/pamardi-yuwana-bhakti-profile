@@ -1,18 +1,27 @@
-.homebanner {
+// .homebanner {
+//   position: relative;
+//   width: 100%;
+//   background: linear-gradient(0deg, #0f2051a0, #0f205170), url('../../assets/images/HomeBanner/Teamwork.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   min-height: 350px;
+//   color: #fff;
+//   h1 {
+//     font-family: 'Times New Roman', Times, serif;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .homebanner {
+//     min-height: 600px;
+//   }
+// }
+
+.homebanner-container {
   position: relative;
-  width: 100%;
-  background: linear-gradient(0deg, #0f2051a0, #0f205170), url('../../assets/images/HomeBanner/Teamwork.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 350px;
-  color: #fff;
-  h1 {
-    font-family: 'Times New Roman', Times, serif;
-  }
+  height: 500px;
 }
-@media screen and (min-width: 768px) {
-  .homebanner {
-    min-height: 600px;
-  }
+.homebanner {
+  opacity: 0.8;
+  filter: brightness(50%);
 }

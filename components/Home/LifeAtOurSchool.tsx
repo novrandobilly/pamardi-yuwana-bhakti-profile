@@ -20,17 +20,17 @@ const LifeAtOurSchool: React.FC = () => {
       <div className='flex flex-col items-center justify-between w-full lg:space-x-4 lg:flex-row'>
         <div id={styles.Activity1} className={styles.ActivityItem}>
           <div className={styles.Backdrop}>
-            <p className={styles.ActivityTitle}>ENGLISH LEARNING</p>
+            <p className={styles.ActivityTitle}>GROUP PROJECT</p>
             <div className={styles.BackdropText}>
-              <p>Daily Conversation</p>
-              <p>TOEFL Course</p>
-              <p>8 Hours A Week</p>
+              <p>Discussion</p>
+              <p>Empathize</p>
+              <p>Innovate</p>
             </div>
           </div>
         </div>
         <div id={styles.Activity2} className={styles.ActivityItem}>
           <div className={styles.Backdrop}>
-            <p className={styles.ActivityTitle}>TEKNOLOGI</p>
+            <p className={styles.ActivityTitle}>LABORATORIUM</p>
             <div className={styles.BackdropText}>
               <p>Lab Komputer</p>
               <p>Lab Sains</p>

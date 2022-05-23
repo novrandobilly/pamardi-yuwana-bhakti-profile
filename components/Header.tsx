@@ -18,11 +18,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className='fixed z-20 flex items-center justify-between w-full py-2 transform -translate-x-1/2 bg-white bg-opacity-90 left-1/2'>
+    <div className='fixed z-30 flex items-center justify-between w-full py-2 transform -translate-x-1/2 bg-blue-800 bg-opacity-90 left-1/2'>
       <div className='flex items-center justify-between w-full px-5 mx-auto max-w-8xl lg:px-10'>
         {/* Pamardi Yuwana Bhakti's Logo */}
         <Link passHref href='/'>
-          <div className='flex items-center w-1/3 '>
+          <div className='flex items-center bg-white rounded-full w-max '>
             <Image src={Logo} objectFit='contain' width={48} height={48} className='cursor-pointer' alt='School Logo' />
           </div>
         </Link>
@@ -103,7 +103,7 @@ const Header: React.FC = () => {
           </Link>
         </li> */}
           <li
-            className={`${styles['nav-item']} font-serif font-bold transition-all duration-150 ease-in-out hover:text-blue-800`}>
+            className={`${styles['nav-item']} font-serif text-white font-bold transition-all duration-150 ease-in-out `}>
             <Link passHref href='/admission'>
               Pendaftaran
             </Link>

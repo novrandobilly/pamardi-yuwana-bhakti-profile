@@ -31,24 +31,24 @@ const Home: NextPage<{ article: Array<ArticleType> }> = ({ article }) => {
       </Head>
 
       <main>
-        <section>
-          <HomeBanner />
-        </section>
-        <section className='flex flex-col items-center px-5 mx-auto my-5 lg:my-16 lg:flex-row lg:px-10 max-w-8xl justify-evenly'>
-          <div className='mb-5 lg:pr-10'>
+        <HomeBanner />
+
+        <section className='flex flex-col items-center px-5 mx-auto my-5 lg:my-10 lg:items-start lg:flex-row lg:px-10 max-w-8xl justify-evenly'>
+          <div className='w-1/2 mb-5 lg:pr-10'>
             <h1 className='mb-2 font-serif text-xl font-bold border-b-4 border-yellow-300 lg:pb-2 lg:text-3xl'>Visi</h1>
             <p className='italic leading-6 lg:leading-loose lg:text-lg'>
-              &ldquo;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur suscipit repudiandae corrupti
-              eius pariatur consectetur temporibus rem reiciendis omnis nisi exercitationem veritatis expedita,
-              molestias magni.&rdquo;
+              &ldquo;Menciptakan pribadi berkualitas yang memiliki keunggulan dalam hal: kemandirian, kreatif, dan
+              inovatif, memiliki nilai-nilai moral dan kepribadian yang tangguh, serta siap menghadapi persaingan
+              global.&rdquo;
             </p>
           </div>
-          <div className='mb-5 '>
+          <div className='w-1/2 mb-5'>
             <h1 className='mb-2 font-serif text-xl font-bold border-b-4 border-yellow-300 lg:pb-2 lg:text-3xl'>Misi</h1>
             <p className='italic leading-6 lg:leading-loose lg:text-lg'>
-              &ldquo;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur suscipit repudiandae corrupti
-              eius pariatur consectetur temporibus rem reiciendis omnis nisi exercitationem veritatis expedita,
-              molestias magni.&rdquo;
+              &ldquo;Melaksanakan pembelajaran yang efektif bagi semua guru dan siswa untuk menumbuh-kembangkan
+              pribadi-pribadi yang memiliki: intrapersonal, interpersonal, keterampilan sosial yang tinggi, memiliki
+              jiwa kewirausahaan dan kemandirian, serta mampu menciptakan usaha-usaha mandiri untuk meningkatkan
+              kesejahteraan masyarakat&rdquo;
             </p>
           </div>
         </section>
@@ -72,9 +72,9 @@ const Home: NextPage<{ article: Array<ArticleType> }> = ({ article }) => {
         {/* <section className='flex items-center justify-between mx-auto mb-28 max-w-8xl'>
           <AcademicCalendar />
         </section> */}
-        <div className='pt-5 lg:pt-10 bg-yellow-50'>
+        <section className='pt-5 lg:pt-10 bg-yellow-50'>
           <LatestNews article={article} />
-        </div>
+        </section>
         <section className='w-full px-5 mx-auto py-14 max-w-7xl lg:px-10'>
           <div className='flex flex-col items-center py-4 mx-auto space-y-5 border-t-4 border-b-4 border-yellow-300 '>
             <h1 className='pb-0 font-serif text-base text-center lg:pb-3 lg:text-4xl '>
