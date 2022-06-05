@@ -34,7 +34,7 @@ const Home: NextPage<{ article: Array<ArticleType> }> = ({ article }) => {
         <HomeBanner />
 
         <section className='flex flex-col items-center px-5 mx-auto my-5 lg:my-10 lg:items-start lg:flex-row lg:px-10 max-w-8xl justify-evenly'>
-          <div className='w-1/2 mb-5 lg:pr-10'>
+          <div className='mb-5 lg:w-1/2 lg:pr-10'>
             <h1 className='mb-2 font-serif text-xl font-bold border-b-4 border-yellow-300 lg:pb-2 lg:text-3xl'>Visi</h1>
             <p className='italic leading-6 lg:leading-loose lg:text-lg'>
               &ldquo;Menciptakan pribadi berkualitas yang memiliki keunggulan dalam hal: kemandirian, kreatif, dan
@@ -42,7 +42,7 @@ const Home: NextPage<{ article: Array<ArticleType> }> = ({ article }) => {
               global.&rdquo;
             </p>
           </div>
-          <div className='w-1/2 mb-5'>
+          <div className='mb-5 lg:w-1/2'>
             <h1 className='mb-2 font-serif text-xl font-bold border-b-4 border-yellow-300 lg:pb-2 lg:text-3xl'>Misi</h1>
             <p className='italic leading-6 lg:leading-loose lg:text-lg'>
               &ldquo;Melaksanakan pembelajaran yang efektif bagi semua guru dan siswa untuk menumbuh-kembangkan

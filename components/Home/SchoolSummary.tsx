@@ -14,27 +14,21 @@ const SchoolSummary = () => {
           Tentang SMP Pamardi Yuwana Bhakti
         </h1>
         <p className='mb-3 text-base italic xl:text-xl'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id accusamus atque ipsa soluta repudiandae
-          sapiente eum doloremque laboriosam.
+          Sekolah Menengah Pertama Katolik Pamardi Yuwana Bhakti atau dikenal juga dengan nama SMP PYB adalah salah satu
+          SMP Swasta di Daerah Pondokgede, Bekasi yang memiliki akreditasi A.
         </p>
         <p className='mb-3 text-base italic xl:text-xl'>
-          Tempore iusto quibusdam soluta vitae earum atque itaque laborum illum, ex sed! Expedita, tempora cupiditate
-          praesentium laboriosam beatae harum porro delectus quam.
+          Berdiri sejak tahun 1996 dengan nama SMP Pamardi Yuwana Bhakti. SMP ini berada di daerah Pondokgede, sekolah
+          kami menjunjung tinggi pribadi berkualitas yang memiliki keunggulan dalam hal: kemandirian, kreatif, dan
+          inovatif, memiliki nilai-nilai moral dan kepribadian yang tangguh, serta siap menghadapi persaingan global.
         </p>
         <p className='mb-3 text-base italic xl:text-xl'>
-          Mauris auctor volutpat cursus. Vestibulum molestie sed nibh quis imperdiet. Donec tempus consectetur dui id
-          condimentum. Phasellus ac nunc non mi egestas sodales in vitae eros.
+          Setelah mengenyam pendidikan di SMP Pamardi Yuwana Bhakti, para alumni diharapkan untuk menjadi
+          pribadi-pribadi yang memiliki intrapersonal, interpersonal, dan ketrampilan sosial yang tinggi, memiliki jiwa
+          kewirausahaan dan kemandirian, yang mampu menciptakan usaha-usaha mandiri untuk meningkatkan kesejahteraan
+          masyarakat
         </p>
-        <p className='mb-3 text-base italic xl:text-xl'>
-          In consequatur magni iste, quis cumque at alias, id unde neque accusamus beatae corrupti amet reiciendis,
-          saepe esse obcaecati quas! Ipsa fugiat, laboriosam saepe dolores officiis reprehenderit quod sed quisquam odit
-          iste explicabo error doloribus quasi autem.
-        </p>
-        <p className='mb-3 text-base italic xl:text-xl'>
-          A nihil repellendus molestias magnam earum totam omnis accusamus laboriosam, ut corporis rerum quae aliquid
-          natus esse nobis voluptatibus tempora doloremque dolor eligendi inventore distinctio atque exercitationem?
-          Aliquid eaque ab rem officia soluta quam excepturi eos.
-        </p>
+
         {/* <Link href='/' passHref>
           <div className='flex items-center w-full max-w-xs italic font-bold text-gray-800 border-b-2 border-transparent cursor-pointer hover:border-b-2 hover:border-yellow-300'>
             Discover Pamardi Yuwana Bhakti &nbsp;

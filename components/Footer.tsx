@@ -83,10 +83,9 @@ const Footer: React.FC = () => {
         </div> */}
         <div className='flex flex-col items-center w-full md:items-end md:w-1/5 min-w-max'>
           <h1 className='text-lg font-bold '>Kontak Kami</h1>
-          <p className='leading-7 '>Telepon: 021 123 4567</p>
-          <p className='leading-7 '>Whatsapp: 0821 1234 5678</p>
-          <p className='mb-5 leading-7 '>Email: pamardi.yuwana@bhakti.com</p>
-          <h1 className='mb-2 text-lg font-bold '>Lihat Aktivitas Kami</h1>
+          <p className='leading-7 '>Telepon: (021) 84973535</p>
+          <p className='leading-7 '>Whatsapp: +62 878-7613-1458</p>
+          <h1 className='mt-4 mb-2 text-lg font-bold '>Lihat Aktivitas Kami</h1>
           <ul className='flex justify-center w-full space-x-5 md:justify-end'>
             <li className='cursor-pointer'>
               <a

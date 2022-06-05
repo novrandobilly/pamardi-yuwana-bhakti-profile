@@ -3,6 +3,7 @@ import { MongoClient } from 'mongodb';
 export const connectToDatabase = async () => {
   let uri = process.env.MONGODB_URI || '';
   let client;
+
   try {
     client = await MongoClient.connect(uri);
   } catch (err: unknown) {
