@@ -5,24 +5,33 @@ import SchoolSummaryImage from '../../assets/images/SchoolSummary.jpg';
 
 const SchoolSummary = () => {
   return (
-    <section className='flex flex-col items-center justify-between px-5 mx-auto mb-5 xl:items-start xl:mb-20 xl:flex-row xl:px-10 max-w-8xl'>
-      <div className='relative w-full max-w-2xl mb-2'>
-        <Image alt='School Summary' src={SchoolSummaryImage} width={650} height={700} />
+    <section className="flex flex-col items-center justify-between px-5 mx-auto mb-5 xl:items-start xl:mb-20 xl:flex-row xl:px-10 max-w-8xl">
+      <div className="relative w-full max-w-2xl mb-2">
+        <div
+          className="absolute z-10 border-4 border-white "
+          style={{
+            width: 'calc(100% - 16px)',
+            height: 'calc(100% - 24px)',
+            top: '8px',
+            left: '8px',
+          }}
+        />
+        <Image alt="School Summary" style={{ objectFit: 'contain' }} src={SchoolSummaryImage} />
       </div>
-      <div className='w-full max-w-2xl text-lg text-gray-800 xl:space-y-5 xl:pr-5 xl:ml-5'>
-        <h1 className='mb-2 font-serif text-base font-bold text-center border-b-4 border-yellow-300 xl:pb-2 xl:text-3xl xl:text-start'>
+      <div className="w-full max-w-2xl text-lg text-gray-800 xl:space-y-5 xl:pr-5 xl:ml-5">
+        <h1 className="mb-2 font-serif text-base font-bold text-center border-b-4 border-yellow-300 xl:pb-2 xl:text-3xl xl:text-start">
           Tentang SMP Pamardi Yuwana Bhakti
         </h1>
-        <p className='mb-3 text-base italic xl:text-xl'>
+        <p className="mb-3 text-base italic xl:text-xl">
           Sekolah Menengah Pertama Katolik Pamardi Yuwana Bhakti atau dikenal juga dengan nama SMP PYB adalah salah satu
           SMP Swasta di Daerah Pondokgede, Bekasi yang memiliki akreditasi A.
         </p>
-        <p className='mb-3 text-base italic xl:text-xl'>
+        <p className="mb-3 text-base italic xl:text-xl">
           Berdiri sejak tahun 1996 dengan nama SMP Pamardi Yuwana Bhakti. SMP ini berada di daerah Pondokgede, sekolah
           kami menjunjung tinggi pribadi berkualitas yang memiliki keunggulan dalam hal: kemandirian, kreatif, dan
           inovatif, memiliki nilai-nilai moral dan kepribadian yang tangguh, serta siap menghadapi persaingan global.
         </p>
-        <p className='mb-3 text-base italic xl:text-xl'>
+        <p className="mb-3 text-base italic xl:text-xl">
           Setelah mengenyam pendidikan di SMP Pamardi Yuwana Bhakti, para alumni diharapkan untuk menjadi
           pribadi-pribadi yang memiliki intrapersonal, interpersonal, dan ketrampilan sosial yang tinggi, memiliki jiwa
           kewirausahaan dan kemandirian, yang mampu menciptakan usaha-usaha mandiri untuk meningkatkan kesejahteraan

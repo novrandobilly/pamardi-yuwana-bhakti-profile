@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
-import Reading from '../../assets/images/Articles/Reading.png';
+import Reading from '../../assets/images/Articles/Reading.jpg';
 import ArticleWrapper from '../../components/Articles/ArticleWrapper';
 
 const ArticleBody = () => {
@@ -8,43 +8,43 @@ const ArticleBody = () => {
     <ArticleWrapper>
       <Head>
         <title>Cara Membaca Cepat Dan Efektif</title>
-        <meta name='description' content='Cara Membaca Cepat Dan Efektif' />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <link rel='icon' href='/favicon.ico' />
+        <meta name="description" content="Cara Membaca Cepat Dan Efektif" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='flex flex-col'>
-        <h1 className='mb-3 font-serif text-lg font-bold text-blue-900 border-b-2 border-yellow-300 lg:border-b-4 lg:pb-2 lg:mb-8 lg:text-3xl'>
+      <div className="flex flex-col">
+        <h1 className="mb-3 font-serif text-lg font-bold text-blue-900 border-b-2 border-yellow-300 lg:border-b-4 lg:pb-2 lg:mb-8 lg:text-3xl">
           Cara Membaca Cepat Dan Efektif
         </h1>
-        <Image alt='Article' src={Reading} width={1270} height={500} objectFit='cover' />
-        <div className='flex flex-col items-start justify-between w-full mb-4 lg:mb-10 lg:pt-2 lg:items-center lg:flex-row'>
-          <div className='mb-2 lg:mb-0'>
-            <p className='font-serif text-xs italic text-gray-500 lg:text-base'>
+        <Image alt="Article" src={Reading} width={1270} height={500} objectFit="cover" />
+        <div className="flex flex-col items-start justify-between w-full mb-4 lg:mb-10 lg:pt-2 lg:items-center lg:flex-row">
+          <div className="mb-2 lg:mb-0">
+            <p className="font-serif text-xs italic text-gray-500 lg:text-base">
               Diterbitkan pada {new Date('2022-05-23').toLocaleDateString()}
             </p>
-            <p className='font-serif text-xs italic text-gray-500 lg:text-base'>Ditulis oleh anonymous</p>
+            <p className="font-serif text-xs italic text-gray-500 lg:text-base">Ditulis oleh anonymous</p>
           </div>
-          <div className='flex flex-wrap items-center justify-between lg:flex-nowrap '>
-            <span className='px-4 mx-1 mb-1 text-xs font-bold text-gray-100 bg-blue-900 rounded-full lg:text-base lg:mb-0'>
+          <div className="flex flex-wrap items-center justify-between lg:flex-nowrap ">
+            <span className="px-4 mx-1 mb-1 text-xs font-bold text-gray-100 bg-blue-900 rounded-full lg:text-base lg:mb-0">
               MEMBACA
             </span>
-            <span className='px-4 mx-1 mb-1 text-xs font-bold text-gray-100 bg-blue-900 rounded-full lg:text-base lg:mb-0'>
+            <span className="px-4 mx-1 mb-1 text-xs font-bold text-gray-100 bg-blue-900 rounded-full lg:text-base lg:mb-0">
               HOBI
             </span>
-            <span className='px-4 mx-1 mb-1 text-xs font-bold text-gray-100 bg-blue-900 rounded-full lg:text-base lg:mb-0'>
+            <span className="px-4 mx-1 mb-1 text-xs font-bold text-gray-100 bg-blue-900 rounded-full lg:text-base lg:mb-0">
               WAWASAN
             </span>
           </div>
         </div>
-        <div className='mb-5'>
-          <p className='mb-2'>
+        <div className="mb-5">
+          <p className="mb-2">
             Halo semuanya! Di sini ada yang suka membaca buku kah? Pastinya pada suka dong ya. Nah, pernah gak sih
             kalian merasa kok baca buku tuh lama dan pengen tahu cara baca cepat? Di tulisan kali ini ada beberapa tips
             yang bisa kalian gunakan untuk meningkatkan kecepatan membaca. Silakan disimak, ya!
           </p>
 
-          <ol className='pl-5 list-decimal'>
-            <li className='mb-2'>
+          <ol className="pl-5 list-decimal">
+            <li className="mb-2">
               <strong>Tentukan Target Baca Cepat</strong>
               <p>
                 Hal pertama yang perlu kamu lakukan adalah memasang target. Tujuan dari memasang target adalah supaya
@@ -55,7 +55,7 @@ const ArticleBody = () => {
                 mengerjakan PR.
               </p>
             </li>
-            <li className='mb-2'>
+            <li className="mb-2">
               <strong>Manfaatkan Pembatas Buku</strong>
               <p>
                 Dewasa ini, beberapa penerbit biasanya menyelipkan pembatas buku dalam buku yang mereka terbitkan.
@@ -65,7 +65,7 @@ const ArticleBody = () => {
                 berapa kamu terakhir, sehingga membantumu dapat baca cepat.
               </p>
             </li>
-            <li className='mb-2'>
+            <li className="mb-2">
               <strong>Hindari Membaca Setiap Kata </strong>
               <p>
                 Sering kali yang membuat proses membaca buku menjadi lama adalah karena kamu membaca setiap kata yang
@@ -75,7 +75,7 @@ const ArticleBody = () => {
                 mencobanya supaya target bisa baca cepat dapat tercapai.
               </p>
             </li>
-            <li className='mb-2'>
+            <li className="mb-2">
               <strong>Jangan Mengulang yang Sudah Dibaca </strong>
               <p>
                 Selain membaca per kata, ada hal lain yang bisa membuat kegiatan membaca buku berlangsung lama yaitu
@@ -85,7 +85,7 @@ const ArticleBody = () => {
                 kamu tidak lagi harus mengulang kalimat karena belum memahami maksudnya.
               </p>
             </li>
-            <li className='mb-2'>
+            <li className="mb-2">
               <strong>Buat Ringkasan </strong>
               <p>
                 Terlepas dari secepat apa kamu bisa menghabiskan suatu buku, adalah hal yang rasanya kurang tepat jika
