@@ -16,7 +16,7 @@ const ArticleBody = () => {
         <h1 className="mb-3 font-serif text-lg font-bold text-blue-900 border-b-2 border-yellow-300 lg:border-b-4 lg:pb-2 lg:mb-8 lg:text-3xl">
           Kemampuan Dasar Yang Perlu Diajarkan Orangtua Kepada Anak Remajanya
         </h1>
-        <Image alt="Article" src={Skills} width={1270} height={500} objectFit="contain" />
+        <Image alt="Article" src={Skills} width={1270} height={500} objectFit="cover" />
         <div className="flex flex-col items-start justify-between w-full mb-4 lg:mb-10 lg:pt-2 lg:items-center lg:flex-row">
           <div className="mb-2 lg:mb-0">
             <p className="font-serif text-xs italic text-gray-500 lg:text-base">
