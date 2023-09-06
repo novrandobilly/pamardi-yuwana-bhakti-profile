@@ -18,17 +18,17 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className='fixed z-30 flex items-center justify-between w-full py-2 transform -translate-x-1/2 bg-blue-800 bg-opacity-90 left-1/2'>
-      <div className='flex items-center justify-between w-full px-5 mx-auto max-w-8xl lg:px-10'>
+    <div className="fixed z-30 flex items-center justify-between w-full py-2 transform -translate-x-1/2 bg-blue-800 bg-opacity-90 left-1/2">
+      <div className="flex items-center justify-between w-full px-5 mx-auto max-w-8xl lg:px-10">
         {/* Pamardi Yuwana Bhakti's Logo */}
-        <Link passHref href='/'>
-          <div className='flex items-center bg-white rounded-full w-max '>
-            <Image src={Logo} objectFit='contain' width={48} height={48} className='cursor-pointer' alt='School Logo' />
+        <Link passHref href="/">
+          <div className="flex items-center bg-white rounded-full w-max ">
+            <Image src={Logo} objectFit="contain" width={48} height={48} className="cursor-pointer" alt="School Logo" />
           </div>
         </Link>
 
         {/* Navgiation Bar */}
-        <ul className='flex justify-between text-base leading-4 w-max '>
+        <ul className="flex justify-between text-base leading-4 w-max ">
           {/* <li className='pr-5 hover:text-blue-800 '>
           <Link passHref href='/'>
             Home
@@ -104,17 +104,17 @@ const Header: React.FC = () => {
         </li> */}
           <li
             className={`${styles['nav-item']} font-serif text-white font-bold transition-all duration-150 ease-in-out `}>
-            <Link passHref href='/admission'>
+            <Link passHref href="/admission">
               Pendaftaran
             </Link>
           </li>
-          {session && session.id && session.adminRole && (
-            <li
-              className={`${styles['nav-item']} font-serif font-bold transition-all ml-7 duration-150 ease-in-out hover:text-blue-800 cursor-pointer`}
-              onClick={handleLogout}>
-              Logout
-            </li>
-          )}
+          {/* {session && session.id && session.adminRole && ( */}
+          <li
+            className={`${styles['nav-item']} font-serif font-bold transition-all ml-7 duration-150 ease-in-out hover:text-blue-800 cursor-pointer`}
+            onClick={handleLogout}>
+            Logout
+          </li>
+          {/* )} */}
           {/* <li className='flex items-center justify-between w-14 hover:text-blue-800'>
             <span className='cursor-pointer'>
               <Image width={20} height={20} layout='fixed' src={ID} alt='Bahasa Indonesia' />

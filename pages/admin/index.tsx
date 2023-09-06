@@ -27,37 +27,37 @@ const Admin: NextPage = () => {
       <form
         onSubmit={handleSubmit}
         style={{ marginTop: '20vh' }}
-        className='flex flex-col items-center justify-center w-full max-w-md p-5 mx-auto mb-20 text-white bg-blue-900 rounded-md border-1 '>
-        <div className='mb-3'>
-          <Image alt='Key' src={Key} width={65} height={65} />
+        className="flex flex-col items-center justify-center w-full max-w-md p-5 mx-auto mb-20 text-white bg-blue-900 rounded-md border-1 ">
+        <div className="mb-3">
+          <Image alt="Key" src={Key} width={65} height={65} />
         </div>
-        <h1 className='text-2xl text-yellow-300'>Admin Panel</h1>
-        <div className='flex flex-col w-full mb-5 '>
-          <label className='text-xs text-yellow-300' htmlFor='adminId'>
+        <h1 className="text-2xl text-yellow-300">Admin Panel</h1>
+        <div className="flex flex-col w-full mb-5 ">
+          <label className="text-xs text-yellow-300" htmlFor="adminId">
             Admin ID
           </label>
           <input
-            type='text'
-            id='adminId'
+            type="text"
+            id="adminId"
             className={`${styles['input']} w-full text-gray-200 bg-transparent border-b-2 border-yellow-300 outline-none`}
             value={adminId}
             onChange={(e) => setAdminId(e.target.value)}
           />
         </div>
-        <div className='flex flex-col w-full mb-5 '>
-          <label className='text-xs text-yellow-300' htmlFor='adminPassword'>
+        <div className="flex flex-col w-full mb-5 ">
+          <label className="text-xs text-yellow-300" htmlFor="adminPassword">
             Password
           </label>
           <input
-            type='password'
-            id='adminPassword'
-            className='w-full text-gray-200 bg-transparent border-b-2 border-yellow-300 outline-none'
+            type="password"
+            id="adminPassword"
+            className="w-full text-gray-200 bg-transparent border-b-2 border-yellow-300 outline-none"
             value={adminPassword}
             onChange={(e) => setAdminPassword(e.target.value)}
           />
         </div>
 
-        <button className='px-5 py-1 text-yellow-300 border-2 border-yellow-300'>
+        <button className="px-5 py-1 text-yellow-300 border-2 border-yellow-300">
           {isLoading ? 'Loading...' : 'Login'}
         </button>
       </form>
@@ -70,14 +70,14 @@ export default Admin;
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const session = await getSession({ req: ctx.req });
 
-  if (session && session?.id && session?.adminRole) {
-    return {
-      redirect: {
-        destination: '/admin/applicants',
-        permanent: false,
-      },
-    };
-  }
+  // if (session && session?.id && session?.adminRole) {
+  //   return {
+  //     redirect: {
+  //       destination: '/admin/applicants',
+  //       permanent: false,
+  //     },
+  //   };
+  // }
   return {
     props: {},
   };
