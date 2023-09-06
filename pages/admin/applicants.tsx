@@ -33,13 +33,13 @@ const Applicants: NextPage<{ applicants: Array<ApplicantsType> }> = ({ applicant
     { label: 'Tanggal Daftar', key: 'dateCreated' },
   ];
 
-  const csvData = applicants.map((applicant) => {
-    return {
-      ...applicant,
-      guardianPhone: `'${applicant.guardianPhone}`,
-      dateCreated: new Date(applicant.dateCreated).toLocaleDateString('id-ID'),
-    };
-  });
+  // const csvData = applicants.map((applicant) => {
+  //   return {
+  //     ...applicant,
+  //     guardianPhone: `'${applicant.guardianPhone}`,
+  //     dateCreated: new Date(applicant.dateCreated).toLocaleDateString('id-ID'),
+  //   };
+  // });
 
   return (
     <AdminLayout>
