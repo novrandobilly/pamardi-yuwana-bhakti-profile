@@ -109,11 +109,11 @@ const Header: React.FC = () => {
             </Link>
           </li>
           {/* {session && session.id && session.adminRole && ( */}
-          <li
+          {/* <li
             className={`${styles['nav-item']} font-serif font-bold transition-all ml-7 duration-150 ease-in-out hover:text-blue-800 cursor-pointer`}
             onClick={handleLogout}>
             Logout
-          </li>
+          </li> */}
           {/* )} */}
           {/* <li className='flex items-center justify-between w-14 hover:text-blue-800'>
             <span className='cursor-pointer'>
