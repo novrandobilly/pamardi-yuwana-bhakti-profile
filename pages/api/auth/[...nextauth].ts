@@ -1,7 +1,7 @@
-// import NextAuth from 'next-auth/next';
-// import CredentialsProvider from 'next-auth/providers/credentials';
-// import { connectToDatabase } from '../../../lib/db';
-// import { compare } from 'bcryptjs';
+import NextAuth from 'next-auth/next';
+import CredentialsProvider from 'next-auth/providers/credentials';
+import { connectToDatabase } from '../../../lib/db';
+import { compare } from 'bcryptjs';
 
 // export default NextAuth({
 //   session: {
