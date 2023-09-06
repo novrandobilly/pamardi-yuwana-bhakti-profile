@@ -43,7 +43,7 @@ const Applicants: NextPage<{ applicants: Array<ApplicantsType> }> = ({ applicant
 
   return (
     <AdminLayout>
-      <Head>
+      {/* <Head>
         <title>Admin Panel</title>
         <meta name="description" content="Admin Panel" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -101,7 +101,7 @@ const Applicants: NextPage<{ applicants: Array<ApplicantsType> }> = ({ applicant
             </tbody>
           </table>
         </div>
-      </main>
+      </main> */}
     </AdminLayout>
   );
 };
