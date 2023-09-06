@@ -45,24 +45,24 @@ const Applicants: NextPage<{ applicants: Array<ApplicantsType> }> = ({ applicant
     <AdminLayout>
       <Head>
         <title>Admin Panel</title>
-        <meta name='description' content='Admin Panel' />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <link rel='icon' href='/favicon.ico' />
+        <meta name="description" content="Admin Panel" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex flex-col justify-between w-full pt-5 mx-auto pb-14 max-w-8xl'>
-        <div className='flex flex-col items-start justify-between w-full mb-3 sm:items-center sm:flex-row '>
-          <h1 className='mb-2 font-serif text-xl font-bold sm:mb-0'>Daftar Calon Peserta Didik</h1>
+      <main className="flex flex-col justify-between w-full pt-5 mx-auto pb-14 max-w-8xl">
+        <div className="flex flex-col items-start justify-between w-full mb-3 sm:items-center sm:flex-row ">
+          <h1 className="mb-2 font-serif text-xl font-bold sm:mb-0">Daftar Calon Peserta Didik</h1>
           <NoSSR>
             <CSVLink
               href={'/'}
-              className='flex items-center py-1 text-sm text-white bg-blue-900 rounded-md justify-evenly w-36'
-              target='_blank'
+              className="flex items-center py-1 text-sm text-white bg-blue-900 rounded-md justify-evenly w-36"
+              target="_blank"
               filename={new Date().toLocaleDateString('id-ID') + '-daftar-calon-peserta-didik.csv'}
               data={csvData}
               headers={headers}
               separator={';'}
               enclosingCharacter={''}>
-              <Image alt='download-icon' src={DownloadIcon} width={20} height={20} />
+              <Image alt="download-icon" src={DownloadIcon} width={20} height={20} />
               Download All
             </CSVLink>
           </NoSSR>
@@ -108,25 +108,25 @@ const Applicants: NextPage<{ applicants: Array<ApplicantsType> }> = ({ applicant
 
 export default Applicants;
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const session = await getSession({ req: context.req });
+// export const getServerSideProps: GetServerSideProps = async (context) => {
+//   const session = await getSession({ req: context.req });
 
-  if (!session || !session?.id || !session?.adminRole) {
-    return {
-      redirect: {
-        destination: '/admin',
-        permanent: false,
-      },
-    };
-  }
-  try {
-    const client = await connectToDatabase();
-    const db = client.db();
-    const data = await db.collection('applicants').find().toArray();
-    const applicants = JSON.parse(JSON.stringify(data));
-    return { props: { applicants } };
-  } catch (err) {
-    console.log(err);
-    return { props: { applicants: [] } };
-  }
-};
+//   if (!session || !session?.id || !session?.adminRole) {
+//     return {
+//       redirect: {
+//         destination: '/admin',
+//         permanent: false,
+//       },
+//     };
+//   }
+//   try {
+//     const client = await connectToDatabase();
+//     const db = client.db();
+//     const data = await db.collection('applicants').find().toArray();
+//     const applicants = JSON.parse(JSON.stringify(data));
+//     return { props: { applicants } };
+//   } catch (err) {
+//     console.log(err);
+//     return { props: { applicants: [] } };
+//   }
+// };
